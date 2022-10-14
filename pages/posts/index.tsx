@@ -1,15 +1,15 @@
 import Layout from "../../components/layout";
-import List from "../../components/list";
+import PostList from "../../components/postlist";
 
 const Posts = () => {
   return (
     <Layout>
-      <List />
-      <List />
-      <List />
-      <List />
-      <List />
-      <List />
+      <PostList />
+      <PostList />
+      <PostList />
+      <PostList />
+      <PostList />
+      <PostList />
     </Layout>
   );
 };
