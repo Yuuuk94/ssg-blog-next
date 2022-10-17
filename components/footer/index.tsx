@@ -3,7 +3,7 @@ const Footer = () => {
     <footer>
       <p>Ⓒ 2022. Yukyung All Rights Reserved.</p>
       <p>
-        <a href="">아이콘</a>
+        <a href="https://nextjs.org/docs/getting-started">아이콘</a>
       </p>
     </footer>
   );
