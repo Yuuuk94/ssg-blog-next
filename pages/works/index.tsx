@@ -1,4 +1,4 @@
-import Layout from "../../components/layout";
+import Layout from "../../components/common/layout";
 
 const Works = () => {
   return <Layout>Work list</Layout>;

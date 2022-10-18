@@ -4,7 +4,7 @@ const Menu = () => {
   return (
     <nav>
       <Link href="/about">about</Link>
-      <Link href="/posts">posts</Link>
+      <Link href="/posts">blog</Link>
       <Link href="/works">works</Link>
       <Link href="/contact">contact</Link>
     </nav>

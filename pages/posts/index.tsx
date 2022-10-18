@@ -1,5 +1,5 @@
-import Layout from "../../components/layout";
-import PostList from "../../components/postlist";
+import Layout from "../../components/common/layout";
+import PostList from "../../components/post";
 
 const Posts = () => {
   return (
