@@ -5,9 +5,11 @@ type MainPostsListProps = {
 };
 
 const MainPostsList = ({ posts }: MainPostsListProps) => {
-  console.log(posts);
   return (
-    <>{posts.length > 0 && posts.map((post) => <MainPost post={post} />)}</>
+    <>
+      {posts.length > 0 &&
+        posts.map((post, key) => <MainPost key={key} post={post} />)}
+    </>
   );
 };
 

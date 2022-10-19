@@ -2,7 +2,7 @@ import Layout from "../components/common/layout";
 import MainPostsList from "../components/post/main-posts-list";
 import Post from "../interfaces/post";
 import Main from "../components/main";
-import getAllPosts from "../lib/post-api";
+import { getAllPosts } from "../lib/post-api";
 
 type Props = {
   allPosts: Post[];
@@ -25,7 +25,6 @@ export const getStaticProps = async () => {
     "title",
     "date",
     "slug",
-    "author",
     "coverImage",
     "excerpt",
   ]);

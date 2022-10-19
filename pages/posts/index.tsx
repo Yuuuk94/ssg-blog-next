@@ -1,17 +1,33 @@
 import Layout from "../../components/common/layout";
-import PostList from "../../components/post";
+import PostsList from "../../components/post/posts-list";
+import { getAllPosts } from "../../lib/post-api";
+import Post from "../../interfaces/post";
 
-const Posts = () => {
+type Props = {
+  allPosts: Post[];
+};
+
+const Posts = ({ allPosts }: Props) => {
+  const posts = allPosts;
   return (
     <Layout>
-      <PostList slug="1" />
-      <PostList slug="2" />
-      <PostList slug="3" />
-      <PostList slug="4" />
-      <PostList slug="5" />
-      <PostList slug="6" />
+      <PostsList posts={posts} />
     </Layout>
   );
 };
 
 export default Posts;
+
+export const getStaticProps = async () => {
+  const allPosts = getAllPosts([
+    "title",
+    "date",
+    "slug",
+    "coverImage",
+    "excerpt",
+  ]);
+
+  return {
+    props: { allPosts },
+  };
+};
