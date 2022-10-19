@@ -3,10 +3,10 @@ import Menu from "./menu";
 
 const Header = () => {
   return (
-    <>
+    <div className="flex justify-between">
       <HeaderTitle />
       <Menu />
-    </>
+    </div>
   );
 };
 

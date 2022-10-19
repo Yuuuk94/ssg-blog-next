@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Meta from "./meta";
 import Header from "../header";
 import Footer from "../footer";
@@ -8,7 +9,9 @@ type props = {
 const Layout = ({ children }: props) => {
   return (
     <>
-      <Meta />
+      <Head>
+        <Meta />
+      </Head>
       <Header />
       <main>{children}</main>
       <Footer />
