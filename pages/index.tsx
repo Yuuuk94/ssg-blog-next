@@ -1,19 +1,19 @@
-import type { NextPage } from "next";
-import Layout from "../components/layout";
-import PostList from "../components/postlist";
+import Layout from "../components/common/layout";
+import MainPostsList from "../components/post/main-posts-list";
 import Post from "../interfaces/post";
-import getAllPosts from "../lib/postApi";
+import Main from "../components/main";
+import { getAllPosts } from "../lib/post-api";
 
 type Props = {
   allPosts: Post[];
 };
 
 const Home = ({ allPosts }: Props) => {
-  const Post = allPosts[0];
+  const Posts = allPosts;
   return (
     <Layout>
-      {Post && <PostList slug={Post.slug} />}
-      <PostList slug={"1"} />
+      <Main />
+      {Posts.length > 0 && <MainPostsList posts={Posts} />}
     </Layout>
   );
 };
@@ -25,7 +25,6 @@ export const getStaticProps = async () => {
     "title",
     "date",
     "slug",
-    "author",
     "coverImage",
     "excerpt",
   ]);
