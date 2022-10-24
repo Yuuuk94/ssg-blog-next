@@ -6,14 +6,22 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Helvetica Neue'],
-      'serif': ['Cambria'],
+      sans: ["Helvetica Neue"],
+      serif: ["Cambria"],
     },
     colors: {
-      'regal-blue': '#243c5a',
-      'bg' : '#EAEAEA',
+      white: "#FFFFFF",
+      bgGray: "#F0F0F3",
+      gray: "AEAEC0",
+      skyBlue: "#9ED4FC",
+      pink: "#CF83F7",
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        "custom-neo-t": "-10px -10px 30px 0 #FFFFFF",
+        "custom-neo-b": "10px 10px 30px 0 #AEAEC0",
+      },
+    },
   },
   plugins: [],
-}
+};
