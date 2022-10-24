@@ -19,7 +19,7 @@ type MenuItemProps = {
 
 const MenuItem = ({ name }: MenuItemProps) => {
   return (
-    <div className="pl-4 text-md font-bold text-textSub hover:text-pink">
+    <div className="pl-4 text-md font-bold text-textSub hover:text-gray">
       <Link href={`/${name}`}>{name}</Link>
     </div>
   );
