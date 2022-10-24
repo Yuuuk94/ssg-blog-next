@@ -6,13 +6,16 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Helvetica Neue"],
-      serif: ["Cambria"],
+      sans: ["Helvetica Neue", "sans-serif"],
+      serif: ["Times"],
     },
     colors: {
       white: "#FFFFFF",
       bgGray: "#F0F0F3",
-      gray: "AEAEC0",
+      gray: "#a7a4a4",
+      main: "#4545e9",
+      textMain: "#3d3d43",
+      textSub: "#b4b4c2",
       skyBlue: "#9ED4FC",
       pink: "#CF83F7",
     },

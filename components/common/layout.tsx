@@ -9,11 +9,9 @@ type props = {
 const Layout = ({ children }: props) => {
   return (
     <>
-      <Head>
-        <Meta />
-      </Head>
+      <Meta />
       <Header />
-      <main className="container lg m-auto px-4 py-8">{children}</main>
+      <main className="mx-auto px-4 pt-10 pb-20 w-2/3">{children}</main>
       <Footer />
     </>
   );

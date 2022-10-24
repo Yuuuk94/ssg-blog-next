@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NeoContent } from "../common/styled-component";
 
 const Menu = () => {
   return (
@@ -18,7 +19,7 @@ type MenuItemProps = {
 
 const MenuItem = ({ name }: MenuItemProps) => {
   return (
-    <div className="pl-1 font-bold text-white">
+    <div className="pl-4 text-md font-bold text-textSub hover:text-pink">
       <Link href={`/${name}`}>{name}</Link>
     </div>
   );
