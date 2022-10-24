@@ -13,7 +13,7 @@ const Layout = ({ children }: props) => {
         <Meta />
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className="container lg m-auto px-4 py-8">{children}</main>
       <Footer />
     </>
   );
