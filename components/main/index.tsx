@@ -14,6 +14,7 @@ const MainContent = () => {
     <>
       <NeoContent>
         <div>
+
           <AnimetionImg />
           <h2 className="text-lg font-semibold  text-textSub">
             안녕하세요,&nbsp;

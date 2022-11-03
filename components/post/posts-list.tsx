@@ -10,7 +10,7 @@ type PostsListProps = {
 
 const PostsList = ({ posts }: PostsListProps) => {
   const allPosts = posts;
-
+  
   const [showNm, setShowNm] = useState<number>(6);
   const [showBtn, setShowBtn] = useState<boolean>(true);
 
