@@ -14,7 +14,9 @@ const MainPostsList = ({ posts }: MainPostsListProps) => {
         New Posts
       </p>
       {posts.length > 0 &&
-        posts.map((post, key) => <MainPost key={key} post={post} />)}
+        posts.map((post, key) => {
+          if (key < 3) return <MainPost key={key} post={post} />;
+        })}
     </NeoContent>
   );
 };
