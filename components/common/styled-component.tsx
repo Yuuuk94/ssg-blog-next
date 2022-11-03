@@ -4,7 +4,7 @@ type Props = {
 
 export const NeoContent = ({ children }: Props) => {
   return (
-    <div className="bg-bgGray rounded-2xl px-8 py-12 mb-12 relative">
+    <div className="bg-bgGray rounded-2xl px-28 py-12 mb-12 relative">
       {children}
       <div className="rounded-2xl shadow-custom-neo-b absolute inset-0 -z-40"></div>
       <div className="rounded-2xl shadow-custom-neo-t absolute inset-0 -z-40"></div>

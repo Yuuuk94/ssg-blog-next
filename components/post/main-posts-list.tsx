@@ -28,7 +28,7 @@ type MainPostsProps = {
 };
 export const MainPost = ({ post }: MainPostsProps) => (
   <Link as={`/posts/${post.slug}`} href="/posts/[slug]">
-    <div className="cursor-pointer hover:underline decoration-2 decoration-textSub">
+    <div className="cursor-pointer hover:content-underline">
       <h3 className="text-lg font-semibold leading-snug text-textMain">
         {post.title}
       </h3>

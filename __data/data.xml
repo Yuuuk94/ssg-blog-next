@@ -1,0 +1,2107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>코딩하는 파인애플 </title>
+		<link>https://ananas.tistory.com/</link>
+		<description>프론트엔드</description>
+		<language>ko</language>
+		<pubDate>Thu, 03 Nov 2022 22:57:35 +0900</pubDate>
+		<generator>TISTORY</generator>
+		<ttl>100</ttl>
+		<managingEditor>NAS-524</managingEditor>
+		<item>
+			<title>.gitignore</title>
+			<link>https://ananas.tistory.com/49</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot;&gt;.gitignore 파일은 Git의 root 디렉토리에 저장되어, Git Repository나 Staging Area에 추가되지 말아야하는 폴더나 파일을 정의하는 파일이다. .gitignore에 정의된 파일이나 폴더는 Staging 되지 않기 때문에 tracking 되지도 않는다. 그래서 git status를 이용했을 때 보이지 않는다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;가끔 .gitignore를 설정해도 작동하지 않을 때가 있다.&lt;br /&gt;ignore처리된 파일이 자꾸 changes에 나온다.&lt;br /&gt;이때는 git의 캐시를 삭제하고 커밋, 푸시하면 정리가 된다.&lt;/p&gt;
+&lt;pre id=&quot;code_1667457595879&quot; class=&quot;bash&quot; data-ke-language=&quot;bash&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ git rm -r --cached .
+$ git add .
+$ git commit -m &quot;fixed untracked files&quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;div data-ke-type=&quot;moreLess&quot; data-text-more=&quot;더보기&quot; data-text-less=&quot;닫기&quot;&gt;&lt;a class=&quot;btn-toggle-moreless&quot;&gt;더보기&lt;/a&gt;
+&lt;div class=&quot;moreless-content&quot;&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;참조&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://git-scm.com/docs/gitignore&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://git-scm.com/docs/gitignore&lt;/a&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://stackoverflow.com/questions/11451535/gitignore-is-ignored-by-git&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://stackoverflow.com/questions/11451535/gitignore-is-ignored-by-git&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>etc</category>
+			<category>.gitignore</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/49</guid>
+			<comments>https://ananas.tistory.com/49#entry49comment</comments>
+			<pubDate>Thu, 03 Nov 2022 15:46:57 +0900</pubDate>
+		</item>
+		<item>
+			<title>새로운 MacOS Ventura와 git error....</title>
+			<link>https://ananas.tistory.com/48</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot;&gt;MacOS가 업데이트 되었습니다.&lt;br /&gt;그런줄도 모르고 살다가 방금 설치했는데요.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그러고 나자&amp;nbsp;&lt;b&gt;&lt;span style=&quot;background-color: #f6e199;&quot;&gt;missing xcrn 에러&lt;/span&gt;&lt;/b&gt;를 만났습니다.&lt;br /&gt;VSCode에서 깃이 없다고 다시 설치하래요.... 후아...&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;git을 다시 설치를 해도, sudo를 아무리 입력해도 &lt;br /&gt;error메세지만 남긴 채 내 품에서 git이 떠나버렸다니...&lt;br /&gt;이러한 메세지만 남기고 아아 님은 갔습니다.&lt;/p&gt;
+&lt;pre id=&quot;code_1667404187570&quot; class=&quot;bash&quot; data-ke-language=&quot;bash&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;missing xcrun 에러, 찾아보니 MacOS가 새로운 버전으로 업데이트 될 때마다 있었던 일이더라고요.&lt;br /&gt;xcode-select명령으로 CommandLineTools(command line developer tools)를 설치해서 쉽게 해결할 수 있었습니다.&lt;/p&gt;
+&lt;pre id=&quot;code_1667404336179&quot; class=&quot;bash&quot; data-ke-language=&quot;bash&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ xcode-select --install&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;다시 돌아온 깃!&lt;br /&gt;외에도 개발 관련 도구들에 missing xcrun 에러가 발생하면 위의 명령어로 해결할 수 있습니다!&lt;/p&gt;
+&lt;pre id=&quot;code_1667404791867&quot; class=&quot;bash&quot; data-ke-language=&quot;bash&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ git
+usage: git [-v | --version] [-h | --help] [-C &amp;lt;path&amp;gt;] [-c &amp;lt;name&amp;gt;=&amp;lt;value&amp;gt;]
+           [--exec-path[=&amp;lt;path&amp;gt;]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=&amp;lt;path&amp;gt;] [--work-tree=&amp;lt;path&amp;gt;] [--namespace=&amp;lt;name&amp;gt;]
+           [--super-prefix=&amp;lt;path&amp;gt;] [--config-env=&amp;lt;name&amp;gt;=&amp;lt;envvar&amp;gt;]
+           &amp;lt;command&amp;gt; [&amp;lt;args&amp;gt;]&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.hahwul.com/2019/11/18/how-to-fix-xcrun-error-after-macos-update/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;참조&lt;/a&gt;&lt;/p&gt;
+&lt;figure id=&quot;og_1667405121280&quot; contenteditable=&quot;false&quot; data-ke-type=&quot;opengraph&quot; data-ke-align=&quot;alignCenter&quot; data-og-type=&quot;article&quot; data-og-title=&quot;Mac 업그레이드 후 xcrun: error: invalid active developer path 에러 해결하기&quot; data-og-description=&quot;MacOS 업그레이드 시 어김없이 발생하는 문제가 하나 있습니다   바로 개발 관련 도구 사용 시 대다수가 발생하는 missing xcrun 에러인데요.&quot; data-og-host=&quot;www.hahwul.com&quot; data-og-source-url=&quot;https://www.hahwul.com/2019/11/18/how-to-fix-xcrun-error-after-macos-update/&quot; data-og-url=&quot;https://www.hahwul.com/2019/11/18/how-to-fix-xcrun-error-after-macos-update/&quot; data-og-image=&quot;https://scrap.kakaocdn.net/dn/5lzNj/hyQqUBvmDP/wql2jYBkYCa2p2DRi0EA3K/img.jpg?width=1920&amp;amp;height=1080&amp;amp;face=0_0_1920_1080,https://scrap.kakaocdn.net/dn/PYLMn/hyQqYYcbgM/JBO96d3vBYuGFJ97M8yQdK/img.jpg?width=1920&amp;amp;height=1080&amp;amp;face=0_0_1920_1080,https://scrap.kakaocdn.net/dn/ZVCsm/hyQqU2y4IA/yvb2Jk8hl9lcQWBBpAJcL0/img.png?width=1258&amp;amp;height=418&amp;amp;face=0_0_1258_418&quot;&gt;&lt;a href=&quot;https://www.hahwul.com/2019/11/18/how-to-fix-xcrun-error-after-macos-update/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-source-url=&quot;https://www.hahwul.com/2019/11/18/how-to-fix-xcrun-error-after-macos-update/&quot;&gt;
+&lt;div class=&quot;og-image&quot; style=&quot;background-image: url('https://scrap.kakaocdn.net/dn/5lzNj/hyQqUBvmDP/wql2jYBkYCa2p2DRi0EA3K/img.jpg?width=1920&amp;amp;height=1080&amp;amp;face=0_0_1920_1080,https://scrap.kakaocdn.net/dn/PYLMn/hyQqYYcbgM/JBO96d3vBYuGFJ97M8yQdK/img.jpg?width=1920&amp;amp;height=1080&amp;amp;face=0_0_1920_1080,https://scrap.kakaocdn.net/dn/ZVCsm/hyQqU2y4IA/yvb2Jk8hl9lcQWBBpAJcL0/img.png?width=1258&amp;amp;height=418&amp;amp;face=0_0_1258_418');&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class=&quot;og-text&quot;&gt;
+&lt;p class=&quot;og-title&quot; data-ke-size=&quot;size16&quot;&gt;Mac 업그레이드 후 xcrun: error: invalid active developer path 에러 해결하기&lt;/p&gt;
+&lt;p class=&quot;og-desc&quot; data-ke-size=&quot;size16&quot;&gt;MacOS 업그레이드 시 어김없이 발생하는 문제가 하나 있습니다   바로 개발 관련 도구 사용 시 대다수가 발생하는 missing xcrun 에러인데요.&lt;/p&gt;
+&lt;p class=&quot;og-host&quot; data-ke-size=&quot;size16&quot;&gt;www.hahwul.com&lt;/p&gt;
+&lt;/div&gt;
+&lt;/a&gt;&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>etc</category>
+			<category>git error</category>
+			<category>MacOS</category>
+			<category>missing xcrun</category>
+			<category>맥업데이트</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/48</guid>
+			<comments>https://ananas.tistory.com/48#entry48comment</comments>
+			<pubDate>Thu, 03 Nov 2022 01:02:14 +0900</pubDate>
+		</item>
+		<item>
+			<title>맥에서 뷰 설치하기 feat. 맥 권한... 주인 좀 알아봐라...</title>
+			<link>https://ananas.tistory.com/44</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot;&gt;뷰를 학습해보려고 설치하는데 오류란 오류를 전부 격었다...&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;우선 node의 문제인줄 알고 지웠다 까는데에서도 문제가 발생했다. 여러 블로그를 다 참고했지만 잘 되지 않다가 아래 블로그를 따라하니 다행히 노드를 잘 지우고 다시 설치했다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://2dowon.netlify.app/etc/nodejs-delete-and-install/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://2dowon.netlify.app/etc/nodejs-delete-and-install/&lt;/a&gt;&lt;/p&gt;
+&lt;figure id=&quot;og_1655887755608&quot; contenteditable=&quot;false&quot; data-ke-type=&quot;opengraph&quot; data-ke-align=&quot;alignCenter&quot; data-og-type=&quot;website&quot; data-og-title=&quot;node.js 재설치 및 node install 권한 오류(MAC)&quot; data-og-description=&quot;어느 순간부터 이상하게 을 이용해 설치하는 것들이 제대로 설치는 되었지만, version을 확인하려고 하면 나오지 않는 문제가 발생했다. 처음에는 환경변수의 문제라고 생각하고 환경변수를 다시&quot; data-og-host=&quot;2dowon.netlify.app&quot; data-og-source-url=&quot;https://2dowon.netlify.app/etc/nodejs-delete-and-install/&quot; data-og-url=&quot;https://2dowon.netlify.app/etc/nodejs-delete-and-install/&quot; data-og-image=&quot;https://scrap.kakaocdn.net/dn/bg12Xy/hyORNvM8mW/rZq04fJOO2NiA0gxySQV80/img.png?width=673&amp;amp;height=383&amp;amp;face=0_0_673_383&quot;&gt;&lt;a href=&quot;https://2dowon.netlify.app/etc/nodejs-delete-and-install/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-source-url=&quot;https://2dowon.netlify.app/etc/nodejs-delete-and-install/&quot;&gt;
+&lt;div class=&quot;og-image&quot; style=&quot;background-image: url('https://scrap.kakaocdn.net/dn/bg12Xy/hyORNvM8mW/rZq04fJOO2NiA0gxySQV80/img.png?width=673&amp;amp;height=383&amp;amp;face=0_0_673_383');&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class=&quot;og-text&quot;&gt;
+&lt;p class=&quot;og-title&quot; data-ke-size=&quot;size16&quot;&gt;node.js 재설치 및 node install 권한 오류(MAC)&lt;/p&gt;
+&lt;p class=&quot;og-desc&quot; data-ke-size=&quot;size16&quot;&gt;어느 순간부터 이상하게 을 이용해 설치하는 것들이 제대로 설치는 되었지만, version을 확인하려고 하면 나오지 않는 문제가 발생했다. 처음에는 환경변수의 문제라고 생각하고 환경변수를 다시&lt;/p&gt;
+&lt;p class=&quot;og-host&quot; data-ke-size=&quot;size16&quot;&gt;2dowon.netlify.app&lt;/p&gt;
+&lt;/div&gt;
+&lt;/a&gt;&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;다음은.. 뷰...VUE....&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;yarn도 깔아보고 복작복작 했지만 결국 뷰 설치 명령어 앞에 sudo를 붙여 권한 문제를 해결하고 설치 됐다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;설치방법은 아래 블로그를 참고했다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://any-ting.tistory.com/38&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://any-ting.tistory.com/38&lt;/a&gt;&lt;/p&gt;
+&lt;figure id=&quot;og_1655887865663&quot; contenteditable=&quot;false&quot; data-ke-type=&quot;opengraph&quot; data-ke-align=&quot;alignCenter&quot; data-og-type=&quot;article&quot; data-og-title=&quot;[Vue] Mac Vue.js 개발환경 설정&quot; data-og-description=&quot;- 개요 안녕하세요. 이번 시간에는 Web Front 3 대장 Vue.js 개발환경 설정해 보겠습니다. 참고로 Vue CLI를 활용해서 설치하겠습니다. :) - VS Code 설치 개발 환경 IDE는 VS Code를 사용하겠습니다. 본인 PC OS&quot; data-og-host=&quot;any-ting.tistory.com&quot; data-og-source-url=&quot;https://any-ting.tistory.com/38&quot; data-og-url=&quot;https://any-ting.tistory.com/38&quot; data-og-image=&quot;https://scrap.kakaocdn.net/dn/bAGUNM/hyORIBftOg/1viTXUD12WTBBkj5FPgIM1/img.png?width=800&amp;amp;height=800&amp;amp;face=0_0_800_800,https://scrap.kakaocdn.net/dn/blh6U2/hyOQnyI3Hs/Y9tjJMrfsmHm1XCVfC2VWk/img.png?width=800&amp;amp;height=800&amp;amp;face=0_0_800_800,https://scrap.kakaocdn.net/dn/jGUiL/hyORGwFbnj/njd0M2bsqKbwykJV8JYXSk/img.png?width=661&amp;amp;height=300&amp;amp;face=0_0_661_300&quot;&gt;&lt;a href=&quot;https://any-ting.tistory.com/38&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-source-url=&quot;https://any-ting.tistory.com/38&quot;&gt;
+&lt;div class=&quot;og-image&quot; style=&quot;background-image: url('https://scrap.kakaocdn.net/dn/bAGUNM/hyORIBftOg/1viTXUD12WTBBkj5FPgIM1/img.png?width=800&amp;amp;height=800&amp;amp;face=0_0_800_800,https://scrap.kakaocdn.net/dn/blh6U2/hyOQnyI3Hs/Y9tjJMrfsmHm1XCVfC2VWk/img.png?width=800&amp;amp;height=800&amp;amp;face=0_0_800_800,https://scrap.kakaocdn.net/dn/jGUiL/hyORGwFbnj/njd0M2bsqKbwykJV8JYXSk/img.png?width=661&amp;amp;height=300&amp;amp;face=0_0_661_300');&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class=&quot;og-text&quot;&gt;
+&lt;p class=&quot;og-title&quot; data-ke-size=&quot;size16&quot;&gt;[Vue] Mac Vue.js 개발환경 설정&lt;/p&gt;
+&lt;p class=&quot;og-desc&quot; data-ke-size=&quot;size16&quot;&gt;- 개요 안녕하세요. 이번 시간에는 Web Front 3 대장 Vue.js 개발환경 설정해 보겠습니다. 참고로 Vue CLI를 활용해서 설치하겠습니다. :) - VS Code 설치 개발 환경 IDE는 VS Code를 사용하겠습니다. 본인 PC OS&lt;/p&gt;
+&lt;p class=&quot;og-host&quot; data-ke-size=&quot;size16&quot;&gt;any-ting.tistory.com&lt;/p&gt;
+&lt;/div&gt;
+&lt;/a&gt;&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;맥은 항상 느끼는 거지만 권한 문제가 늘 큰 산이다. 엄지 검지 지문 등록하고 비밀번호 매번 넣어도 주인도 못 알아본다. 그래도 바이러스나 여러 보안 문제에서 안전하다는게 장점이지만 요즘은 글쎄? 한글 호환도 그렇고 뭔가 까다로운 고양이랑 작업하는 기분이다...&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>etc</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/44</guid>
+			<comments>https://ananas.tistory.com/44#entry44comment</comments>
+			<pubDate>Wed, 22 Jun 2022 17:53:19 +0900</pubDate>
+		</item>
+		<item>
+			<title>틱택톡 실습 with 공식문서</title>
+			<link>https://ananas.tistory.com/39</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;iframe height=&quot;300&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;Tic Tac Toe&quot; src=&quot;https://codepen.io/yuuuk94/embed/ZErwxBB?default-tab=result&quot; frameborder=&quot;no&quot; loading=&quot;lazy&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+  See the Pen &lt;a href=&quot;https://codepen.io/yuuuk94/pen/ZErwxBB&quot;&gt;
+  Tic Tac Toe&lt;/a&gt; by Yuuuk94 (&lt;a href=&quot;https://codepen.io/yuuuk94&quot;&gt;@yuuuk94&lt;/a&gt;)
+  on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+&lt;pre id=&quot;code_1655280534200&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;function Square(props) {
+// 함수형 컴포넌트
+  return (
+    &amp;lt;button
+      className=&quot;square&quot;
+      onClick={props.onClick}
+      &amp;gt;
+      {props.value}
+    &amp;lt;/button&amp;gt;
+  );
+}
+
+// class Square extends React.Component {
+//   constructor(props){
+//     // 리액트에서 하위 클래스의 생성자를 정의할 때 super(props)
+//     super(props);
+//     // 리액트 컴포넌트는 this.state로 상태값을 갖음
+//     this.state = {
+//       value: null,
+//     };
+//   }
+//   render() {
+//     return (
+//       &amp;lt;button 
+//         className=&quot;square&quot; 
+//            // 화살표 함수 - this의 혼란스러운 동작을 피함
+//         onClick={() =&amp;gt; 
+//           // this.setState({value: 'X'})
+//           // 컴포넌트에서 setState를 호출하면 
+//           // React는 자동으로 컴포넌트 내부의 자식 컴포넌트 역시 업데이트
+          
+//           this.props.onClick()
+//         }&amp;gt;
+//         {this.props.value}
+//       &amp;lt;/button&amp;gt;
+//     );
+//   }
+// }
+
+class Board extends React.Component {
+  // 여러개의 자식으로부터 데이터를 모으거나 
+  // 두 개의 자식 컴포넌트들이 서로 통신하게 하려면
+  // 부모 컴포넌트에 공유 state를 정의해야 함.
+  // 부모 컴포넌트는 props를 사용하여 자식 컴포넌트에 state를 다시 전달 할 수 있음!
+  
+  // class Game으로 이동
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     squares: Array(9).fill(null),
+  //     xIsNext: true,
+  //   }
+  // }
+  
+  renderSquare(i) {
+    return &amp;lt;Square 
+             value={this.props.squares[i]}
+             onClick={() =&amp;gt; this.props.onClick(i)}             
+           /&amp;gt;;
+  }
+
+  render() {
+    return (
+      &amp;lt;div&amp;gt;
+        &amp;lt;div className=&quot;board-row&quot;&amp;gt;
+          {this.renderSquare(0)}
+          {this.renderSquare(1)}
+          {this.renderSquare(2)}
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div className=&quot;board-row&quot;&amp;gt;
+          {this.renderSquare(3)}
+          {this.renderSquare(4)}
+          {this.renderSquare(5)}
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div className=&quot;board-row&quot;&amp;gt;
+          {this.renderSquare(6)}
+          {this.renderSquare(7)}
+          {this.renderSquare(8)}
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  }
+}
+
+class Game extends React.Component {
+  constructor(props) {
+    // 동작 기록
+    super(props);
+    this.state = {
+      history: [{
+        squares: Array(9).fill(null),
+      }],
+      stepNumber: 0,
+      xIsNext: true
+    };
+  }
+  
+  handleClick(i) {
+    const history = this.state.history.slice(0, this.state.stepNumber + 1);
+    const current = history[history.length - 1];
+    // .slice() 기존 배열을 수정하지 않고 squares 배열의 복사본을 생성, 수정
+    // 데이터 불변성! - 복잡한 특징들을 단순화, 변화 감지, 다시 랜더링 되는 시기를 결정
+    const squares = current.squares.slice();
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    squares[i] = this.state.xIsNext ? 'X' : 'O';
+    this.setState({
+      history: history.concat([{
+        squares: squares,
+      }]),
+      stepNumber: history.length,
+      xIsNext: !this.state.xIsNext,
+    });
+  }
+  
+  jumpTo(step) {
+    this.setState({
+      stepNumber: step,
+      xIsNext: (step % 2) === 0,
+    });
+  }
+  
+  render() {
+    const history = this.state.history;
+    const current = history[this.state.stepNumber];
+    const winner = calculateWinner(current.squares);
+    
+    const moves = history.map((step, move) =&amp;gt; {
+      const desc = move ?
+        'go to move #' + move :
+        'go to game start';
+      return (
+        &amp;lt;li key={move}&amp;gt;
+          &amp;lt;button onClick={() =&amp;gt; this.jumpTo(move)}&amp;gt;
+            {desc}
+          &amp;lt;/button&amp;gt;
+        &amp;lt;/li&amp;gt;
+      );
+    });
+    
+    let status;
+    if (winner) {
+      status = `Winner : ${winner}`;
+    } else {
+      status = `Next player: ${this.state.xIsNext ? 'X' : 'O'}`;
+    }
+    
+    return (
+      &amp;lt;div className=&quot;game&quot;&amp;gt;
+        &amp;lt;div className=&quot;game-board&quot;&amp;gt;
+          &amp;lt;Board 
+            squares={current.squares}
+            onClick={(i) =&amp;gt; this.handleClick(i)}
+          /&amp;gt;
+        &amp;lt;/div&amp;gt;
+        &amp;lt;div className=&quot;game-info&quot;&amp;gt;
+          &amp;lt;div&amp;gt;{status}&amp;lt;/div&amp;gt;
+          &amp;lt;ol&amp;gt;{moves}&amp;lt;/ol&amp;gt;
+        &amp;lt;/div&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  }
+}
+
+// ========================================
+
+const root = ReactDOM.createRoot(document.getElementById(&quot;root&quot;));
+root.render(&amp;lt;Game /&amp;gt;);
+
+// 승자 확인
+function calculateWinner(squares) {
+  const lines = [
+    [0,1,2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (let i = 0; i &amp;lt; lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] &amp;amp;&amp;amp; squares[a] === squares[b] &amp;amp;&amp;amp; squares[a] === squares[c]) {
+      return squares[a];
+    }
+  }
+  return null;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://ko.reactjs.org/tutorial/tutorial.html#completing-the-game&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://ko.reactjs.org/tutorial/tutorial.html#completing-the-game&lt;/a&gt;&lt;/p&gt;
+&lt;figure id=&quot;og_1655280551428&quot; contenteditable=&quot;false&quot; data-ke-type=&quot;opengraph&quot; data-ke-align=&quot;alignCenter&quot; data-og-type=&quot;article&quot; data-og-title=&quot;자습서: React 시작하기 &amp;ndash; React&quot; data-og-description=&quot;A JavaScript library for building user interfaces&quot; data-og-host=&quot;ko.reactjs.org&quot; data-og-source-url=&quot;https://ko.reactjs.org/tutorial/tutorial.html#completing-the-game&quot; data-og-url=&quot;https://ko.reactjs.org/tutorial/tutorial.html&quot; data-og-image=&quot;https://scrap.kakaocdn.net/dn/b0cYE8/hyOMNweePa/b92KaASGcIKlOPMYpIET71/img.png?width=1200&amp;amp;height=630&amp;amp;face=0_0_1200_630,https://scrap.kakaocdn.net/dn/wpJ17/hyOMJ8qnXG/Xywu0JKUPRESVApdKIk1Q0/img.png?width=476&amp;amp;height=304&amp;amp;face=0_0_476_304,https://scrap.kakaocdn.net/dn/bjSdAh/hyOMO2YjNl/iSkwvMwJHGGhKhwYMmQcvK/img.png?width=270&amp;amp;height=296&amp;amp;face=0_0_270_296&quot;&gt;&lt;a href=&quot;https://ko.reactjs.org/tutorial/tutorial.html#completing-the-game&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-source-url=&quot;https://ko.reactjs.org/tutorial/tutorial.html#completing-the-game&quot;&gt;
+&lt;div class=&quot;og-image&quot; style=&quot;background-image: url('https://scrap.kakaocdn.net/dn/b0cYE8/hyOMNweePa/b92KaASGcIKlOPMYpIET71/img.png?width=1200&amp;amp;height=630&amp;amp;face=0_0_1200_630,https://scrap.kakaocdn.net/dn/wpJ17/hyOMJ8qnXG/Xywu0JKUPRESVApdKIk1Q0/img.png?width=476&amp;amp;height=304&amp;amp;face=0_0_476_304,https://scrap.kakaocdn.net/dn/bjSdAh/hyOMO2YjNl/iSkwvMwJHGGhKhwYMmQcvK/img.png?width=270&amp;amp;height=296&amp;amp;face=0_0_270_296');&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class=&quot;og-text&quot;&gt;
+&lt;p class=&quot;og-title&quot; data-ke-size=&quot;size16&quot;&gt;자습서: React 시작하기 &amp;ndash; React&lt;/p&gt;
+&lt;p class=&quot;og-desc&quot; data-ke-size=&quot;size16&quot;&gt;A JavaScript library for building user interfaces&lt;/p&gt;
+&lt;p class=&quot;og-host&quot; data-ke-size=&quot;size16&quot;&gt;ko.reactjs.org&lt;/p&gt;
+&lt;/div&gt;
+&lt;/a&gt;&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>React</category>
+			<category>class컴포넌트</category>
+			<category>리액트</category>
+			<category>틱택톡</category>
+			<category>함수 컴포넌트</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/39</guid>
+			<comments>https://ananas.tistory.com/39#entry39comment</comments>
+			<pubDate>Wed, 15 Jun 2022 17:07:46 +0900</pubDate>
+		</item>
+		<item>
+			<title>Typescript 배우기 8 (유틸리티 타입)</title>
+			<link>https://ananas.tistory.com/37</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;pre id=&quot;code_1654410005885&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// 유틸리티 타입
+
+interface User {
+  id: number;
+  name: string;
+  age?: number;
+  gender?: 'm' | 'f';
+}
+
+type UserKey = keyof User; // 'id' | 'name' | 'age' | 'gender'
+
+const uk: UserKey = 'name'; // key값 중 하나 입력!
+
+// partial&amp;lt;T&amp;gt;
+let admin1: Partial&amp;lt;User&amp;gt; = {
+  id: 1,
+  name: 'Bob',
+  age: 10,
+  // 모든 key? 상태
+  // job: &quot;student&quot;, 없는 key error
+};
+
+// Required&amp;lt;T&amp;gt;
+let admin2: Required&amp;lt;User&amp;gt; = {
+  id: 2,
+  name: 'Tom',
+  age: 10,
+  gender: 'f',
+  // ?가 필수 프로퍼티가 됨
+};
+
+// Readonly&amp;lt;T&amp;gt;
+let admin3: Readonly&amp;lt;User&amp;gt; = {
+  id: 3,
+  name: 'Kate',
+  age: 10,
+  gender: 'm',
+};
+
+// admin3.id = 4; error 수정 불가
+
+//Record&amp;lt;K, T&amp;gt; K는 key!
+function isValid(user: User) {
+  const result: Record&amp;lt;keyof User, boolean&amp;gt; = {
+    id: user.id &amp;gt; 0,
+    name: user.name !== '',
+    age: user.age &amp;gt; 0,
+    gender: user.gender === 'm',
+  };
+  return result;
+}
+
+type Grade = '1' | '2' | '3' | '4';
+type Score = 'A' | 'B' | 'C' | 'D' | 'F';
+
+const score: Record&amp;lt;Grade, Score&amp;gt; = {
+  1: 'A',
+  2: 'B',
+  3: 'C',
+  4: 'F',
+};
+
+// Pick&amp;lt;T, K&amp;gt;
+const customer1: Pick&amp;lt;User, &quot;id&quot; | &quot;name&quot;&amp;gt; = {
+  // 필수
+  id: 1,
+  name: &quot;Shin&quot;,
+}
+
+// Pick&amp;lt;T, K&amp;gt;
+const customer2: Omit&amp;lt;User, &quot;age&quot; | &quot;gender&quot;&amp;gt; = {
+  // 제외
+  id: 1,
+  name: &quot;Shin&quot;,
+}
+
+// Exclude&amp;lt;T1, T2&amp;gt;
+type T1 = string | number;
+type T2 = Exclude&amp;lt;T1, number | boolean&amp;gt;; // string
+
+// NonNullable&amp;lt;Type&amp;gt; undefined도 제외
+type T3 = string | number | null | undefined;
+type T4 = NonNullable&amp;lt;T3&amp;gt;; // string | number
+
+// 그 외 유틸리티는 공식문서 참고!&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=IeXZo-JXJjc&amp;amp;list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&amp;amp;index=8&quot;&gt;https://www.youtube.com/watch?v=IeXZo-JXJjc&amp;amp;list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&amp;amp;index=8&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=IeXZo-JXJjc&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/cu9i8O/hyOEa7tAjj/sBq4wMSsGzcxWXzw9TuQ70/img.jpg?width=480&amp;amp;height=360&amp;amp;face=0_0_480_360&quot; data-video-width=&quot;480&quot; data-video-height=&quot;360&quot; data-video-origin-width=&quot;480&quot; data-video-origin-height=&quot;360&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/IeXZo-JXJjc&quot; width=&quot;480&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>typescript</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/37</guid>
+			<comments>https://ananas.tistory.com/37#entry37comment</comments>
+			<pubDate>Sun, 05 Jun 2022 15:20:30 +0900</pubDate>
+		</item>
+		<item>
+			<title>Typescript 배우기 7(제네릭)</title>
+			<link>https://ananas.tistory.com/36</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;pre id=&quot;code_1654408268737&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// Generic
+
+// 함수
+// function getSize(arr:number[] | string[] | boolean[] | object[]):number {
+//   return arr.length;
+// }
+function getSize&amp;lt;T&amp;gt;(arr: T[]) {
+  // &amp;lt;T&amp;gt; 타입파라미터 어떤 타입이든 전달받아서 사용
+  return arr.length;
+}
+
+const arr1 = [1, 2, 3];
+getSize&amp;lt;number&amp;gt;(arr1); // 3
+
+const arr2 = ['a', 'b', 'c'];
+getSize&amp;lt;string&amp;gt;(arr2); // 3
+
+const arr3 = [true, false, true];
+getSize&amp;lt;boolean&amp;gt;(arr3); // 3
+
+const arr4 = [{}, {}, { name: 'Tim' }];
+getSize(arr4); // 3
+
+// 클래스
+interface Service&amp;lt;T&amp;gt; {
+  name: string;
+  price: number;
+  option: T;
+}
+
+const s1: Service&amp;lt;object&amp;gt; = {
+  // 객체 내 속성이 정해져 있다면
+  // &amp;lt;{color:string, coupon: boolean}&amp;gt;
+  name: 's1',
+  price: 10000,
+  option: {
+    color: 'red',
+    coupon: false,
+  },
+};
+
+const s2: Service&amp;lt;string&amp;gt; = {
+  name: 's2',
+  price: 10000,
+  option: 'good',
+};
+
+interface Book {
+  price: number;
+}
+
+const book: Book = { price: 4000 };
+
+function showName&amp;lt;T extends { name: string }&amp;gt;(data: T): string {
+  return data.name;
+}
+
+showName(s1);
+showName(s2);
+// showName(book);
+// name이 없는 매개변수가 오면 error&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=pReXmUBjU3E&amp;amp;list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&amp;amp;index=7&quot;&gt;https://www.youtube.com/watch?v=pReXmUBjU3E&amp;amp;list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&amp;amp;index=7&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=pReXmUBjU3E&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/3R0S6/hyOFzkeQfA/SKKR3P3RIaZhQ7UYvKPcK1/img.jpg?width=1280&amp;amp;height=720&amp;amp;face=0_0_1280_720&quot; data-video-width=&quot;860&quot; data-video-height=&quot;484&quot; data-video-origin-width=&quot;860&quot; data-video-origin-height=&quot;484&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/pReXmUBjU3E&quot; width=&quot;860&quot; height=&quot;484&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>typescript</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/36</guid>
+			<comments>https://ananas.tistory.com/36#entry36comment</comments>
+			<pubDate>Sun, 05 Jun 2022 14:51:23 +0900</pubDate>
+		</item>
+		<item>
+			<title>Typescript 배우기 6 (클래스)</title>
+			<link>https://ananas.tistory.com/35</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;pre id=&quot;code_1654406757625&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// 클래스
+// class Train{
+//   constructor(color){
+//     this.color = color;
+//   }
+//   start(){
+//     console.log(&quot;start&quot;);
+//   }
+// }
+// JavaScript에서는 문제없지만 Typescript에서는 타입선언이 안되어 있어 에러
+
+//추상 class
+abstract class Train {
+  public name: string = 'train';
+  // public, private(#), protected
+  static wheels = 100;
+  constructor(public color: string, name) {
+    // public or readonly 변수 앞 선언
+    this.color = color;
+    this.name = name;
+  }
+  start() {
+    console.log('start');
+    console.log(this.name);
+    console.log(Train.wheels);
+    // static 선언시 this는 error
+  }
+  abstract doSonthing(): void;
+}
+// const ktx = new Train('red', 'ktx');
+// 추상클래스 선언시 new는 사용 안됨
+
+// 접근 제한자(Access modifier)
+// public - 자식 클래스, 클래스 인스턴스 모두 접근 가능
+// private - 해당 클래스 내부에서만 접근 가능
+// protected - 자식 클래스에서도 접근 가능
+
+class Mugunghwa extends Train {
+  constructor(color: string, name) {
+    super(color, name);
+  }
+  showName() {
+    console.log(super.name); // error private
+  }
+  // 상속받은 클래스는 추상메소드를 구체화시켜야함
+  doSonthing() {
+    console.log('do');
+  }
+}
+
+const yongsanHang = new Mugunghwa('black', 'yongsan');
+console.log(yongsanHang.name); // error protected&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=17Oh028Jpis&amp;amp;list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&amp;amp;index=6&quot;&gt;https://www.youtube.com/watch?v=17Oh028Jpis&amp;amp;list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&amp;amp;index=6&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=17Oh028Jpis&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/dzowJt/hyOEqiaZgv/EFagk3gGuJOUg5Gk7KZ4B1/img.jpg?width=1280&amp;amp;height=720&amp;amp;face=0_0_1280_720&quot; data-video-width=&quot;860&quot; data-video-height=&quot;484&quot; data-video-origin-width=&quot;860&quot; data-video-origin-height=&quot;484&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/17Oh028Jpis&quot; width=&quot;860&quot; height=&quot;484&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OpvtD7ELMQo&quot;&gt;https://www.youtube.com/watch?v=OpvtD7ELMQo&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=OpvtD7ELMQo&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/etyVFG/hyOEhZMRMH/ApHeJqnA14rSIUdN8RH871/img.jpg?width=1280&amp;amp;height=720&amp;amp;face=0_0_1280_720&quot; data-video-width=&quot;860&quot; data-video-height=&quot;484&quot; data-video-origin-width=&quot;860&quot; data-video-origin-height=&quot;484&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/OpvtD7ELMQo&quot; width=&quot;860&quot; height=&quot;484&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>typescript</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/35</guid>
+			<comments>https://ananas.tistory.com/35#entry35comment</comments>
+			<pubDate>Sun, 05 Jun 2022 14:26:31 +0900</pubDate>
+		</item>
+		<item>
+			<title>Typescript 배우기 5 (리터럴, 유니온/교차 타입)</title>
+			<link>https://ananas.tistory.com/34</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;pre id=&quot;code_1654405316394&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// 리터럴 타입
+const userName1 = 'Bob'; // 문자열 리터럴 타입
+// 상수로 정의되어진 타입
+
+let userName2: string | number = 'Tom';
+// 변수로 정의하더라도 문자열로 정의되어지면 문자열 변수만 사용가능
+// 해서 | 유니온 타입 사용
+userName2 = 3; // error
+
+type job = 'police' | 'developer' | 'teacher';
+
+interface User {
+  name: string;
+  job: job;
+}
+
+const user: User = {
+  name: 'Bob',
+  // job: &quot;student&quot; error
+  job: 'police',
+};
+
+interface HighSchoolStudent {
+  name: number | string;
+  grade: 1 | 2 | 3;
+}
+
+//유니온 타입
+interface Car {
+  name: 'car';
+  color: string;
+  start(): void;
+}
+
+interface Mobile {
+  name: 'mobile';
+  color: string;
+  call(): void;
+}
+
+function getGift(gift: Car | Mobile) {
+  console.log(gift.color);
+  // 식별가능한 유니온 타입
+  // 동일한 속성의 타입을 다르게해서 구별
+  if (gift.name === 'car') {
+    gift.start();
+  } else {
+    gift.call();
+  }
+}
+
+// Intersection Type
+interface Toy {
+  name: string;
+  color: string;
+  price: number;
+}
+
+interface Lego {
+  name: string;
+  bild(): void;
+}
+
+const toyLego: Toy &amp;amp; Lego = {
+  // 두 인터페이스의 모든 속성 이용
+  name: '타요',
+  color: 'Red',
+  price: 10000,
+  bild() {},
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=QZ8TRIJWCGQ&amp;amp;list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&amp;amp;index=5&quot;&gt;https://www.youtube.com/watch?v=QZ8TRIJWCGQ&amp;amp;list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&amp;amp;index=5&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=QZ8TRIJWCGQ&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/VfJVh/hyOEiYFSE1/VpXs3mqoGNF02c0BjCvxa1/img.jpg?width=1280&amp;amp;height=720&amp;amp;face=0_0_1280_720&quot; data-video-width=&quot;860&quot; data-video-height=&quot;484&quot; data-video-origin-width=&quot;860&quot; data-video-origin-height=&quot;484&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/QZ8TRIJWCGQ&quot; width=&quot;860&quot; height=&quot;484&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>typescript</category>
+			<category>typeScript</category>
+			<category>코딩앙마</category>
+			<category>타입스크립트</category>
+			<category>프론트엔드</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/34</guid>
+			<comments>https://ananas.tistory.com/34#entry34comment</comments>
+			<pubDate>Sun, 05 Jun 2022 14:02:45 +0900</pubDate>
+		</item>
+		<item>
+			<title>Typescript 배우기 4 ( 함수)</title>
+			<link>https://ananas.tistory.com/30</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;pre id=&quot;code_1652958462675&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// 함수
+
+function addNm(num1: number, num2: number): number {
+  return num1 + num2;
+}
+
+addNm(1, 2);
+
+// 매개변수
+function Hello(name: string, age?: number): string {
+  // 옵션 매개변수는 필수 매개변수 앞에 오면 안됨!
+  // age: number | undefined, name: string 은 가능
+  if (age !== undefined) {
+    return `Hello, ${name || 'world'}. You are ${age}.`;
+  } else {
+    return `Hello, ${name || 'world'}`;
+  }
+  // name이 없을 경우 &quot;world&quot;가 출력되도록 지정했어도 ?를 사용해 보다 명시적으로 표현
+  // ? 옵셔널파라미터
+}
+// function Hello(name = 'world'):string{
+//   retrun `Hello, ${name}`;
+// }
+const result = Hello('Sam');
+const result2 = Hello('Sam', 30);
+// const result3 = Hello(123); // error
+console.log(result, result2);
+
+// 나머지 매개변수
+function addSome(...nums: number[]) {
+  return nums.reduce((result, num) =&amp;gt; result + num, 0);
+}
+
+addSome(1, 2, 3, 4, 5); // 15
+
+// This
+
+interface Person {
+  name: string;
+  age: number;
+}
+
+const Sam: Person = {
+  name: 'Sam',
+  age: 30
+};
+
+function showName(this: Person, age: number, gender: 'm' | 'f') {
+  console.log(this.name, age, gender);
+}
+
+const p = showName.bind(Sam);
+p(30, 'm');
+
+// 함수 오버로드
+// 전달받은 매개변수의 갯수, 타입에 따라 다른 동작을 하게 하는 것
+
+function Join(name:string, age:number):Person;
+function Join(name:string, age:string):string;
+function Join(name:string, age:number|string):Person|string{
+  if(typeof age === &quot;number&quot;){
+    return {name, age};
+  }else{
+    return &quot;나이는 숫자로 입력해 주세요.&quot;;
+  }
+}
+
+const Tom: Person = Join('Tom', 30);
+const Jane: string = Join('Jane', &quot;30&quot;);
+
+console.log(Tom, Jane)&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=prfgfj03_VA&quot;&gt;https://www.youtube.com/watch?v=prfgfj03_VA&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=prfgfj03_VA&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/lfsNU/hyOtgefQyA/csarJcsB2299Z4zUTpEQF0/img.jpg?width=1280&amp;amp;height=720&amp;amp;face=0_0_1280_720&quot; data-video-width=&quot;860&quot; data-video-height=&quot;484&quot; data-video-origin-width=&quot;860&quot; data-video-origin-height=&quot;484&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/prfgfj03_VA&quot; width=&quot;860&quot; height=&quot;484&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://yamoo9.gitbook.io/typescript/interface/function-types&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://yamoo9.gitbook.io/typescript/interface/function-types&lt;/a&gt;&lt;/p&gt;
+&lt;figure id=&quot;og_1652958491318&quot; contenteditable=&quot;false&quot; data-ke-type=&quot;opengraph&quot; data-ke-align=&quot;alignCenter&quot; data-og-type=&quot;website&quot; data-og-title=&quot;인터페이스와 함수타입 - TypeScript Guidebook&quot; data-og-description=&quot;인터페이스는 함수 타입도 정의할 수 있습니다. 함수를 할당 받을 변수에 인터페이스를 설정하면 함수 매개변수, 리턴 값 타입을 명시적으로 입력하지 않아도 오류는 발생하지 않습니다. 인터&quot; data-og-host=&quot;yamoo9.gitbook.io&quot; data-og-source-url=&quot;https://yamoo9.gitbook.io/typescript/interface/function-types&quot; data-og-url=&quot;https://yamoo9.gitbook.io/typescript/interface/function-types&quot; data-og-image=&quot;&quot;&gt;&lt;a href=&quot;https://yamoo9.gitbook.io/typescript/interface/function-types&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-source-url=&quot;https://yamoo9.gitbook.io/typescript/interface/function-types&quot;&gt;
+&lt;div class=&quot;og-image&quot; style=&quot;background-image: url();&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class=&quot;og-text&quot;&gt;
+&lt;p class=&quot;og-title&quot; data-ke-size=&quot;size16&quot;&gt;인터페이스와 함수타입 - TypeScript Guidebook&lt;/p&gt;
+&lt;p class=&quot;og-desc&quot; data-ke-size=&quot;size16&quot;&gt;인터페이스는 함수 타입도 정의할 수 있습니다. 함수를 할당 받을 변수에 인터페이스를 설정하면 함수 매개변수, 리턴 값 타입을 명시적으로 입력하지 않아도 오류는 발생하지 않습니다. 인터&lt;/p&gt;
+&lt;p class=&quot;og-host&quot; data-ke-size=&quot;size16&quot;&gt;yamoo9.gitbook.io&lt;/p&gt;
+&lt;/div&gt;
+&lt;/a&gt;&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>typescript</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/30</guid>
+			<comments>https://ananas.tistory.com/30#entry30comment</comments>
+			<pubDate>Thu, 19 May 2022 20:08:16 +0900</pubDate>
+		</item>
+		<item>
+			<title>Typescript 배우기 3 (interface)</title>
+			<link>https://ananas.tistory.com/29</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;pre id=&quot;code_1652954798871&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// 인터페이스
+
+// let user:object;
+
+// user = {
+//   name : 'xx',
+//   age : 30
+// }
+// console.log(user.name) // error
+// property를 정의해서 객체를 사용할 때 interface 사용
+
+type Score = 'A' | 'B' | 'C' | 'F';
+
+interface User {
+  name: string;
+  age: number;
+  gender?: string; // 있어도 되고 없어도 되고
+  readonly birthYear: number; // 읽기 전용
+  [grade: number]: Score; // type을 생성해서 사용할 수 있음
+}
+
+let user: User = {
+  name: 'xx',
+  age: 30,
+  birthYear: 2000,
+  1: 'A',
+  // 2 : 'D' // error 정의되지 않은 Score
+};
+
+user.age = 10;
+user.gender = 'male';
+// user.birthYear = 1990; // error readonly
+console.log(user);
+
+// interface 함수
+
+interface Add {
+  (num1: number, num2: number): number;
+}
+
+const add: Add = function (x, y) {
+  return x + y;
+};
+
+add(1, 2);
+// add(a, 2); // type error
+
+interface isAdult {
+  (age: number): boolean;
+}
+
+const g: isAdult = (age) =&amp;gt; {
+  return age &amp;gt; 19;
+};
+
+g(33); // true
+
+// implements
+// interface class
+
+interface Car {
+  color: string;
+  wheels: number;
+  start(): void;
+}
+
+class Bmw implements Car {
+  color;
+  wheels = 4;
+
+  constructor(c: string) {
+    this.color = c;
+  }
+
+  start() {
+    console.log('go...');
+  }
+}
+
+const m = new Bmw('green');
+console.log(m)
+m.start();
+
+
+// extend 인터페이스 확장
+
+interface Benz extends Car {
+  door: number;
+  stop(): void;
+}
+
+const benz : Benz = {
+  color : 'black',
+  wheels : 4,
+  start(){
+    console.log('do not go')
+  },
+  door : 5,
+  stop(){
+    console.log('stop');
+  }
+}
+
+console.log(benz)
+
+// 복수 확장
+
+interface Toy {
+  name: string;
+}
+
+interface ToyCar extends Car, Toy {
+  price : number
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=OIMPLNICzoc&quot;&gt;https://www.youtube.com/watch?v=OIMPLNICzoc&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=OIMPLNICzoc&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/byxhph/hyOs2tvhi9/nIXLmNiRTrQGqSXZe23Ee1/img.jpg?width=1280&amp;amp;height=720&amp;amp;face=0_0_1280_720&quot; data-video-width=&quot;860&quot; data-video-height=&quot;484&quot; data-video-origin-width=&quot;860&quot; data-video-origin-height=&quot;484&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/OIMPLNICzoc&quot; width=&quot;860&quot; height=&quot;484&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://yamoo9.gitbook.io/typescript/interface/extends&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://yamoo9.gitbook.io/typescript/interface/extends&lt;/a&gt;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>typescript</category>
+			<category>Interface</category>
+			<category>typeScript</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/29</guid>
+			<comments>https://ananas.tistory.com/29#entry29comment</comments>
+			<pubDate>Thu, 19 May 2022 19:18:09 +0900</pubDate>
+		</item>
+		<item>
+			<title>Typescript 배우기 2(타입종류)</title>
+			<link>https://ananas.tistory.com/28</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;pre id=&quot;code_1652953001066&quot; class=&quot;bash&quot; data-ke-language=&quot;bash&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// index.ts
+
+// string
+let car: string = 'bmw';
+
+// number
+let age: number = 30;
+
+// boolean
+let isAdult: boolean = true;
+
+// Array
+let a: number[] = [1, 2, 3];
+let a2: Array&amp;lt;number&amp;gt; = [1, 2, 3];
+
+let week1: string[] = ['mon', 'tue', 'wed'];
+let week2: Array&amp;lt;string&amp;gt; = ['mon', 'tue', 'wed'];
+
+console.log(age, isAdult, a, a2, week1, week2);
+
+// 튜플 Tuple
+
+let b: [string, number];
+
+b = ['z', 1];
+// b = [1, 'z']; error
+
+b[0].toLowerCase();
+// b[1].toLowerCase(); error
+
+// void, never
+function sayHello(): void {
+  // void - 주어진 표현식을 평가하고 undefined를 반환
+  console.log('hello');
+}
+
+function showError(): never {
+  // never - 일반적으로 함수의 리턴 타입으로 사용
+  // 함수의 리턴 타입으로 never가 사용될 경우, 항상 오류를 출력하거나 리턴 값을 절대로 내보내지 않음을 의미
+  // 이는 무한 루프(loop)에 빠지는 것과 같다
+
+  throw new Error();
+}
+
+function infLoop(): never {
+  while (true) {
+    // do something...
+  }
+}
+
+// enum
+
+enum Os {
+  // enum - 열거형 데이터 타입
+  // 멤버라 불리는 명명된 값의 집합을 이루는 자료형으로  기억하기 어려운 숫자 대신 친숙한 이름으로 접근/사용하기 위해 활용할 수 있다
+  // 열거된 각 멤버는 별도의 값이 설정되지 않은 경우 기본적으로 0부터 시작
+  Window, // (enum member) os.Window = 0
+  Ios = 3, // 값을 지정할 경우, 이후 멤버의 값은 +1씩 증가
+  Android, // (enum member) os.Android = 4
+}
+
+console.log(Os[3]); // Ios
+console.log(Os['Window']); // 0
+
+let myOs: Os;
+myOs = Os.Window;
+// 특정값을 입력하고자 강제하고 싶을 때, 그 값들이 공통점이 있을 때 사용
+
+// null, undefined
+
+let c: null = null;
+let d: undefined = undefined;&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=70w82P-KiVM&quot;&gt;https://www.youtube.com/watch?v=70w82P-KiVM&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=70w82P-KiVM&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/cKATtZ/hyOtdaHOKQ/y0u8cKFLS11JsaIcgsv6o1/img.jpg?width=1280&amp;amp;height=720&amp;amp;face=0_0_1280_720&quot; data-video-width=&quot;860&quot; data-video-height=&quot;484&quot; data-video-origin-width=&quot;860&quot; data-video-origin-height=&quot;484&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/70w82P-KiVM&quot; width=&quot;860&quot; height=&quot;484&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://yamoo9.gitbook.io/typescript/types/enum&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://yamoo9.gitbook.io/typescript/types/enum&lt;/a&gt;&lt;/p&gt;
+&lt;figure id=&quot;og_1652953035529&quot; contenteditable=&quot;false&quot; data-ke-type=&quot;opengraph&quot; data-ke-align=&quot;alignCenter&quot; data-og-type=&quot;website&quot; data-og-title=&quot;enum 타입 - TypeScript Guidebook&quot; data-og-description=&quot;enum은 다음과 같은 JavaScript 코드로 컴파일 됩니다. enum 데이터 코드는 멤버는 숫자 또는 데이터 값을 속성으로 하는 객체를 생성하는 코드로 변환됩니다.&quot; data-og-host=&quot;yamoo9.gitbook.io&quot; data-og-source-url=&quot;https://yamoo9.gitbook.io/typescript/types/enum&quot; data-og-url=&quot;https://yamoo9.gitbook.io/typescript/types/enum&quot; data-og-image=&quot;https://scrap.kakaocdn.net/dn/c6OhZU/hyOsox9G42/AGan0cwACnMU8J92gvl4w1/img.png?width=1384&amp;amp;height=400&amp;amp;face=0_0_1384_400&quot;&gt;&lt;a href=&quot;https://yamoo9.gitbook.io/typescript/types/enum&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-source-url=&quot;https://yamoo9.gitbook.io/typescript/types/enum&quot;&gt;
+&lt;div class=&quot;og-image&quot; style=&quot;background-image: url('https://scrap.kakaocdn.net/dn/c6OhZU/hyOsox9G42/AGan0cwACnMU8J92gvl4w1/img.png?width=1384&amp;amp;height=400&amp;amp;face=0_0_1384_400');&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class=&quot;og-text&quot;&gt;
+&lt;p class=&quot;og-title&quot; data-ke-size=&quot;size16&quot;&gt;enum 타입 - TypeScript Guidebook&lt;/p&gt;
+&lt;p class=&quot;og-desc&quot; data-ke-size=&quot;size16&quot;&gt;enum은 다음과 같은 JavaScript 코드로 컴파일 됩니다. enum 데이터 코드는 멤버는 숫자 또는 데이터 값을 속성으로 하는 객체를 생성하는 코드로 변환됩니다.&lt;/p&gt;
+&lt;p class=&quot;og-host&quot; data-ke-size=&quot;size16&quot;&gt;yamoo9.gitbook.io&lt;/p&gt;
+&lt;/div&gt;
+&lt;/a&gt;&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>typescript</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/28</guid>
+			<comments>https://ananas.tistory.com/28#entry28comment</comments>
+			<pubDate>Thu, 19 May 2022 18:37:29 +0900</pubDate>
+		</item>
+		<item>
+			<title>Redux 복습하기 with 생활코딩 3</title>
+			<link>https://ananas.tistory.com/26</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot;&gt;리덕스는 리액트에서 컨포넌트가 많아지고 복잡해지면서 생기는 복잡한 prop를 관리하기 위한 라이브러리/패턴이다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;리덕스를 사용하면 액션시 스토어가 포함된 컨포넌트만 재랜더링 되기 때문에 퍼포먼스면에서 더 효율적이다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;createSrote를 사용하는 과정에서 Reduxjs/toolkit을 권장하고 있기에 밑줄이 계속 발생했다. 아직은 createStore을 사용할 수 있으나, toolkit을 설치 후 configureStore를 사용하거나 legacy_createStore as createStore로 사용해야 함.&lt;/p&gt;
+&lt;pre id=&quot;code_1652432750605&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;import * as React from 'react';
+import './style.css';
+import { legacy_createStore as createStore } from 'redux';
+// reduxjs/toolkit 에서는 configureStore를 추천하지만,
+// createStore를 계속 사용하기 위해 legacy_createStore as createStore를 씀
+import { Provider, useSelector, useDispatch, connect } from 'react-redux';
+
+function reducer(currentState, action) {
+  if (currentState === undefined) {
+    return {
+      number: 1,
+    };
+  }
+  // 각각의 스테이트 값의 변화를 불변하게 유지해야함.
+  const newState = { ...currentState };
+  if (action.type === 'PLUS') {
+    newState.number++;
+  }
+  return newState;
+}
+const store = createStore(reducer);
+
+export default function App() {
+  // const [number, setNumber] = React.useState(1);
+  return (
+    &amp;lt;div id=&quot;container&quot;&amp;gt;
+      &amp;lt;h1&amp;gt;Root&amp;lt;/h1&amp;gt;
+      &amp;lt;div id=&quot;grid&quot;&amp;gt;
+        &amp;lt;Provider store={store}&amp;gt;
+          &amp;lt;Left1 /&amp;gt;
+          &amp;lt;Right1 /&amp;gt;
+        &amp;lt;/Provider&amp;gt;
+      &amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}
+
+function Left1(props) {
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;h1&amp;gt;Left1&amp;lt;/h1&amp;gt;
+      &amp;lt;Left2 /&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}
+
+function Left2(props) {
+  console.log('2');
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;h1&amp;gt;Left2&amp;lt;/h1&amp;gt;
+      &amp;lt;Left3 /&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}
+// redux를 사용하면 state를 사용하는 넘버만 재랜더링 된다.
+// 퍼포먼스면에서 효율적임.
+function Left3(props) {
+  console.log('3');
+  const number = useSelector((state) =&amp;gt; state.number);
+  // useSelector는 함수를 인자로 받음
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;h1&amp;gt;Left3 : {number}&amp;lt;/h1&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}
+
+function Right1(props) {
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;h1&amp;gt;Right1&amp;lt;/h1&amp;gt;
+      &amp;lt;Right2 /&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}
+
+function Right2(props) {
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;h1&amp;gt;Right2&amp;lt;/h1&amp;gt;
+      &amp;lt;Right3 /&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}
+
+function Right3(props) {
+  const dispatch = useDispatch();
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;h1&amp;gt;Right3&amp;lt;/h1&amp;gt;
+      &amp;lt;input
+        type=&quot;button&quot;
+        value=&quot;+&quot;
+        onClick={() =&amp;gt; {
+          dispatch({ type: 'PLUS' });
+        }}
+      /&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}
+// 부모 자식 컴포넌트가 많아지고 복잡해 질 때, props 관리 또한 복잡해 진다.&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://stackblitz.com/edit/react-ts-2itycz?embed=1&amp;amp;file=App.tsx&quot;&gt;https://stackblitz.com/edit/react-ts-2itycz?embed=1&amp;amp;file=App.tsx&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure id=&quot;og_1652432333833&quot; contenteditable=&quot;false&quot; data-ke-type=&quot;opengraph&quot; data-ke-align=&quot;alignCenter&quot; data-og-type=&quot;website&quot; data-og-title=&quot;React Ts (forked) - StackBlitz&quot; data-og-description=&quot;&quot; data-og-host=&quot;stackblitz.com&quot; data-og-source-url=&quot;https://stackblitz.com/edit/react-ts-2itycz?embed=1&amp;amp;file=App.tsx&quot; data-og-url=&quot;https://stackblitz.com/edit/react-ts-2itycz?embed=1&amp;amp;file=App.tsx&quot; data-og-image=&quot;https://scrap.kakaocdn.net/dn/Tf4Hb/hyOoCBHnPh/iweLxuBIejKKFNPlspeJx0/img.png?width=1600&amp;amp;height=800&amp;amp;face=0_0_1600_800&quot;&gt;&lt;a href=&quot;https://stackblitz.com/edit/react-ts-2itycz?embed=1&amp;amp;file=App.tsx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; data-source-url=&quot;https://stackblitz.com/edit/react-ts-2itycz?embed=1&amp;amp;file=App.tsx&quot;&gt;
+&lt;div class=&quot;og-image&quot; style=&quot;background-image: url('https://scrap.kakaocdn.net/dn/Tf4Hb/hyOoCBHnPh/iweLxuBIejKKFNPlspeJx0/img.png?width=1600&amp;amp;height=800&amp;amp;face=0_0_1600_800');&quot;&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class=&quot;og-text&quot;&gt;
+&lt;p class=&quot;og-title&quot; data-ke-size=&quot;size16&quot;&gt;React Ts (forked) - StackBlitz&lt;/p&gt;
+&lt;p class=&quot;og-desc&quot; data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class=&quot;og-host&quot; data-ke-size=&quot;size16&quot;&gt;stackblitz.com&lt;/p&gt;
+&lt;/div&gt;
+&lt;/a&gt;&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=yjuwpf7VH74&amp;amp;t=40s&quot;&gt;https://www.youtube.com/watch?v=yjuwpf7VH74&amp;amp;t=40s&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=yjuwpf7VH74&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/b5gepH/hyOoFLWEGR/OOaV3uqZ3CEKBtwCrYOZ5K/img.jpg?width=1280&amp;amp;height=720&amp;amp;face=0_0_1280_720&quot; data-video-width=&quot;860&quot; data-video-height=&quot;484&quot; data-video-origin-width=&quot;860&quot; data-video-origin-height=&quot;484&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/yjuwpf7VH74&quot; width=&quot;860&quot; height=&quot;484&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>React</category>
+			<category>REACT</category>
+			<category>Redux</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/26</guid>
+			<comments>https://ananas.tistory.com/26#entry26comment</comments>
+			<pubDate>Fri, 13 May 2022 17:59:22 +0900</pubDate>
+		</item>
+		<item>
+			<title>Redux 복습 with 공식문서 2</title>
+			<link>https://ananas.tistory.com/25</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: left;&quot;&gt;아..튜토리얼이 영어인데 이게 모바일에서 그런지는 모르겠다. 아이패드만 갖고 카페에 온 상황에 타자 치는거는 너무 중노동이니 그냥 영어로 발췌하는 점 양해바람.&lt;/p&gt;
+&lt;blockquote data-ke-style=&quot;style1&quot;&gt; &lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;b&gt;Redux is a pattern and library for managing and updating application state, using events called &quot;actions&quot;.&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt; It serves as a centralized store for state that needs to be used across your entire application, with rules ensuring that the state can only be updated in a predictable fashion.&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;Redux helps you manage &quot;global&quot; state - state that is needed across many parts of your application.&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;The patterns and tools provided by Redux make it easier to understand when, where, why, and how the state in your application is being updated, and how your application logic will behave when those changes occur. Redux guides you towards writing code that is predictable and testable, which helps give you confidence that your application will work as expected.&lt;/span&gt; 
+&lt;/blockquote&gt;
+&lt;pre data-ke-type=&quot;codeblock&quot; class=&quot;Javascript&quot; data-ke-language=&quot;Javascript&quot;&gt;&lt;code&gt;// Actions
+const addTodoAction = {
+&amp;nbsp;&amp;nbsp;type: 'todos/todoAdded',
+&amp;nbsp;&amp;nbsp;payload: 'Buy milk'
+}
+
+// Action Creators
+const addTodo = text =&amp;gt; {
+&amp;nbsp;&amp;nbsp;return {
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;type: 'todos/todoAdded',
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;payload: text
+&amp;nbsp;&amp;nbsp;}
+}
+
+// Reducers
+const initialState = { value: 0 }
+
+function counterReducer(state = initialState, action) {
+&amp;nbsp;&amp;nbsp;// Check to see if the reducer cares about this action
+&amp;nbsp;&amp;nbsp;if (action.type === 'counter/increment') {
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;// If so, make a copy of `state`
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return {
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;...state,
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;// and update the copy with the new value
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;value: state.value + 1
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;}
+&amp;nbsp;&amp;nbsp;// otherwise return the existing state unchanged
+&amp;nbsp;&amp;nbsp;return state
+}
+
+// Store
+import { configureStore } from '@reduxjs/toolkit'
+
+const store = configureStore({ reducer: counterReducer })
+
+console.log(store.getState())
+// {value: 0}
+
+// Dispatch
+store.dispatch({ type: 'counter/increment' })
+
+console.log(store.getState())
+// {value: 1}
+
+// call action creators to dispatch the right action:
+const increment = () =&amp;gt; {
+&amp;nbsp;&amp;nbsp;return {
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;type: 'counter/increment'
+&amp;nbsp;&amp;nbsp;}
+}
+
+store.dispatch(increment())
+
+console.log(store.getState())
+// {value: 2}
+
+// Selectors
+const selectCounterValue = state =&amp;gt; state.value
+
+const currentValue = selectCounterValue(store.getState())
+console.log(currentValue)
+// 2
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote data-ke-style=&quot;style2&quot;&gt;
+  SUMMARY 
+ &lt;br&gt; 
+ &lt;br&gt;Redux is a library for managing global application state 
+ &lt;br&gt;- Redux is typically used with the React-Redux library for integrating Redux and React together 
+ &lt;br&gt;- Redux Toolkit is the recommended way to write Redux logic 
+ &lt;br&gt;Redux uses a &quot;one-way data flow&quot; app structure 
+ &lt;br&gt;- State describes the condition of the app at a point in time, and UI renders based on that state 
+ &lt;br&gt;- When something happens in the app: 
+ &lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;The UI dispatches an action 
+ &lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;The store runs the reducers, and the state is updated based on what occurred 
+ &lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;The store notifies the UI that the state has changed 
+ &lt;br&gt;- The UI re-renders based on the new state 
+ &lt;br&gt;Redux uses several types of code 
+ &lt;br&gt;- Actions are plain objects with a type field, and describe &quot;what happened&quot; in the app 
+ &lt;br&gt;- Reducers are functions that calculate a new state value based on previous state + an action 
+ &lt;br&gt;- A Redux store runs the root reducer whenever an action is dispatched 
+&lt;/blockquote&gt;
+&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://ko.redux.js.org/tutorials/essentials/part-1-overview-concepts&quot; target=&quot;_blank&quot;&gt;&lt;span&gt;https://ko.redux.js.org/tutorials/essentials/part-1-overview-concepts&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;opengraph&quot; data-og-title=&quot;Redux 핵심, Part 1: Redux Overview and Concepts | Redux&quot; data-ke-align=&quot;alignCenter&quot; data-og-description=&quot;The official Essentials tutorial for Redux: learn how to use Redux, the right way&quot; data-og-host=&quot;ko.redux.js.org&quot; data-og-source-url=&quot;https://ko.redux.js.org/tutorials/essentials/part-1-overview-concepts&quot; data-og-image=&quot;https://scrap.kakaocdn.net/dn/dFVozl/hyOmEgjqJ2/RqVBgW4lDWod1MS2kYkwl0/img.png?width=1200&amp;amp;height=600&amp;amp;face=0_0_1200_600&quot; data-og-url=&quot;https://ko.redux.js.org/tutorials/essentials/part-1-overview-concepts&quot;&gt;
+ &lt;a href=&quot;https://ko.redux.js.org/tutorials/essentials/part-1-overview-concepts&quot; target=&quot;_blank&quot; data-source-url=&quot;https://ko.redux.js.org/tutorials/essentials/part-1-overview-concepts&quot;&gt;
+  &lt;div class=&quot;og-image&quot; style=&quot;background-image: url('https://scrap.kakaocdn.net/dn/dFVozl/hyOmEgjqJ2/RqVBgW4lDWod1MS2kYkwl0/img.png?width=1200&amp;amp;height=600&amp;amp;face=0_0_1200_600')&quot;&gt; 
+  &lt;/div&gt;
+  &lt;div class=&quot;og-text&quot;&gt;
+   &lt;p class=&quot;og-title&quot;&gt;Redux 핵심, Part 1: Redux Overview and Concepts | Redux&lt;/p&gt;
+   &lt;p class=&quot;og-desc&quot;&gt;The official Essentials tutorial for Redux: learn how to use Redux, the right way&lt;/p&gt;
+   &lt;p class=&quot;og-host&quot;&gt;ko.redux.js.org&lt;/p&gt;
+  &lt;/div&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: left;&quot;&gt;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>React</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/25</guid>
+			<comments>https://ananas.tistory.com/25#entry25comment</comments>
+			<pubDate>Wed, 11 May 2022 20:22:14 +0900</pubDate>
+		</item>
+		<item>
+			<title>Redux 복습 with 공식문서 1</title>
+			<link>https://ananas.tistory.com/24</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;blockquote data-ke-style=&quot;style1&quot;&gt; &lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;Redux는 여러분이 &lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;span style=&quot;background-color: #f6e199;&quot;&gt;일관적으로 동작하고, 서로 다른 환경(서버, 클라이언트, 네이티브)에서 작동하고, 테스트하기 쉬운 앱을 작성하도록&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt; 도와줍니다. 여기에 더해서 &lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;span style=&quot;background-color: #f6e199;&quot;&gt;시간여행형 디버거와 결합된 실시간 코드 수정&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;과 같은 훌륭한 개발자 경험을 제공합니다.&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;여러분은 Redux를 React나 다른 뷰 라이브러리와 함께 사용할 수 있습니다. Redux는 매우 작지만(의존 라이브러리 포함 2kB), 사용 가능한 애드온은 매우 많습니다.&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;기본 예제&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;여러분의 앱의 &lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;span style=&quot;background-color: #f6e199;&quot;&gt;상태 전부는 하나의 저장소(store)안에 있는 객체 트리에 저장&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;됩니다. &lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;span style=&quot;background-color: #f6e199;&quot;&gt;상태 트리를 변경하는 유일한 방법은 무엇이 일어날지 서술하는 객체인 액션(action)을 보내는 것 뿐&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;입니다. &lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;span style=&quot;background-color: #f6e199;&quot;&gt;액션이 상태 트리를 어떻게 변경할지 명시하기 위해 여러분은 리듀서(reducers)를 작성&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;해야 합니다.&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;상태를 바로 변경하는 대신, &lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;span style=&quot;background-color: #f6e199;&quot;&gt;액션이라 불리는 평범한 객체를 통해 일어날 변경을 명시합니다. 그리고 각각의 액션이 전체 애플리케이션의 상태를 어떻게 변경할지 결정하는 특별한 함수인 리듀서를 작성&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;합니다.&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;보통의 &lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;span style=&quot;background-color: #f6e199;&quot;&gt;Redux 앱에는 하나의 루트 리듀서 함수를 가진 단 하나의 저장소가 있습니다. 앱이 커짐에 따라 루트 리듀서를 상태 트리의 서로 다른 부분에서 개별적으로 동작하는 작은 리듀서들로 나눌 수 있습니다.&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt; React 앱을 하나의 루트 컴포넌트에서 시작해서 여러 작은 컴포넌트의 조합으로 바꾸는 것과 동일합니다.&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;이런 아키텍처가 카운터 앱에서는 너무 과한 것처럼 보이지만, &lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt;&lt;span style=&quot;background-color: #f6e199;&quot;&gt;크고 복잡한 앱에서는 이 패턴의 확장성이 잘 드러납니다. 액션에 따른 모든 변경을 추적할 수 있기 때문에, 매우 강력한 개발자 도구를 가능하게 해주기도&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-family: Noto Serif KR;&quot;&gt; 합니다. 여러분은 사용자 세션을 기록한 다음 액션 하나하나를 다시 실행해 볼 수 있습니다.&lt;/span&gt; 
+&lt;/blockquote&gt;
+&lt;pre data-ke-type=&quot;codeblock&quot; class=&quot;Javascript&quot; data-ke-language=&quot;Javascript&quot;&gt;&lt;code&gt;import { createStore } from 'redux'
+
+/**
+ * 이것이 (state, action) =&amp;gt; state 형태의 순수 함수인 리듀서입니다.
+ * 리듀서는 액션이 어떻게 상태를 다음 상태로 변경하는지 서술합니다.
+ *
+ * 상태의 모양은 당신 마음대로입니다: 기본형(primitive)일수도, 배열일수도, 객체일수도,
+ * 심지어 Immutable.js 자료구조일수도 있습니다.&amp;nbsp;&amp;nbsp;오직 중요한 점은 상태 객체를 변경해서는 안되며,
+ * 상태가 바뀐다면 새로운 객체를 반환해야 한다는 것입니다.
+ *
+ * 이 예제에서 우리는 `switch` 구문과 문자열을 썼지만,
+ * 여러분의 프로젝트에 맞게
+ * (함수 맵 같은) 다른 컨벤션을 따르셔도 좋습니다.
+ */
+function counter(state = 0, action) {
+&amp;nbsp;&amp;nbsp;switch (action.type) {
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;case 'INCREMENT':
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return state + 1
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;case 'DECREMENT':
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return state - 1
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;default:
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return state
+&amp;nbsp;&amp;nbsp;}
+}
+
+// 앱의 상태를 보관하는 Redux 저장소를 만듭니다.
+// API로는 { subscribe, dispatch, getState }가 있습니다.
+let store = createStore(counter)
+
+// subscribe()를 이용해 상태 변화에 따라 UI가 변경되게 할 수 있습니다.
+// 보통은 subscribe()를 직접 사용하기보다는 뷰 바인딩 라이브러리(예를 들어 React Redux)를 사용합니다.
+// 하지만 현재 상태를 localStorage에 영속적으로 저장할 때도 편리합니다.
+
+store.subscribe(() =&amp;gt; console.log(store.getState())))
+
+// 내부 상태를 변경하는 유일한 방법은 액션을 보내는 것뿐입니다.
+// 액션은 직렬화할수도, 로깅할수도, 저장할수도 있으며 나중에 재실행할수도 있습니다.
+store.dispatch({ type: 'INCREMENT' })
+// 1
+store.dispatch({ type: 'INCREMENT' })
+// 2
+store.dispatch({ type: 'DECREMENT' })
+// 1&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://ko.redux.js.org/introduction/getting-started/&quot; target=&quot;_blank&quot;&gt;&lt;span&gt;https://ko.redux.js.org/introduction/getting-started/&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;opengraph&quot; data-og-title=&quot;Redux 시작하기 | Redux&quot; data-ke-align=&quot;alignCenter&quot; data-og-description=&quot;소개 &gt; 시작하기: Redux를 배우고 사용하기 위한 자료&quot; data-og-host=&quot;ko.redux.js.org&quot; data-og-source-url=&quot;https://ko.redux.js.org/introduction/getting-started&quot; data-og-image=&quot;https://scrap.kakaocdn.net/dn/cYyhbS/hyOmx9dBGe/qx5KUTziSvtw6W3Lc3tt9K/img.png?width=1200&amp;amp;height=600&amp;amp;face=0_0_1200_600&quot; data-og-url=&quot;https://ko.redux.js.org/introduction/getting-started&quot;&gt;
+ &lt;a href=&quot;https://ko.redux.js.org/introduction/getting-started&quot; target=&quot;_blank&quot; data-source-url=&quot;https://ko.redux.js.org/introduction/getting-started&quot;&gt;
+  &lt;div class=&quot;og-image&quot; style=&quot;background-image: url('https://scrap.kakaocdn.net/dn/cYyhbS/hyOmx9dBGe/qx5KUTziSvtw6W3Lc3tt9K/img.png?width=1200&amp;amp;height=600&amp;amp;face=0_0_1200_600')&quot;&gt; 
+  &lt;/div&gt;
+  &lt;div class=&quot;og-text&quot;&gt;
+   &lt;p class=&quot;og-title&quot;&gt;Redux 시작하기 | Redux&lt;/p&gt;
+   &lt;p class=&quot;og-desc&quot;&gt;소개 &amp;gt; 시작하기: Redux를 배우고 사용하기 위한 자료&lt;/p&gt;
+   &lt;p class=&quot;og-host&quot;&gt;ko.redux.js.org&lt;/p&gt;
+  &lt;/div&gt;&lt;/a&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot; style=&quot;text-align: left;&quot;&gt;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>React</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/24</guid>
+			<comments>https://ananas.tistory.com/24#entry24comment</comments>
+			<pubDate>Wed, 11 May 2022 19:23:22 +0900</pubDate>
+		</item>
+		<item>
+			<title>Webpack 셋팅하기 2</title>
+			<link>https://ananas.tistory.com/22</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot;&gt;css 설치&lt;/p&gt;
+&lt;pre id=&quot;code_1651570364157&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ npm i -D style-loader css-loader&lt;/code&gt;&lt;/pre&gt;
+&lt;pre id=&quot;code_1651570569197&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// webpack.config.js
+
+const path = require(&quot;path&quot;); 
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;); 
+
+module.exports = {
+	entry : './src/index.js',
+    output : { 
+    	filename : &quot;main.js&quot;,
+        path : path.resolve(__dirname, &quot;dist&quot;),
+    },
+    // 추가내용
+    module : {
+    	reles : [{
+            test : /\.css$/,
+            use : [&quot;style-loader&quot;, &quot;css-loader&quot;], // use의 배열은 뒤에서부터 적용됨
+        }]
+    },
+    plugins : [
+    	new HtmlWebpackPlugin({
+    		template : &quot;./index.html&quot;,
+    	}),
+    ],
+    devServer : {
+    	static : {
+        	directory : path.resolve(__dirname, 'dist')
+        },
+        port : 8080
+    }
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이후 작업 중인 js 파일에 css 파일을 import해준다.&lt;/p&gt;
+&lt;pre id=&quot;code_1651570739195&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ npm i -D mini-css-extract-plugin&lt;/code&gt;&lt;/pre&gt;
+&lt;pre id=&quot;code_1651571050995&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// webpack.config.js
+
+const path = require(&quot;path&quot;); 
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;); 
+const MiniCssExtractPlugin = require(&quot;mini-css-extract-plugin&quot;);
+
+module.exports = {
+	entry : './src/index.js',
+    output : { 
+    	filename : &quot;main.js&quot;,
+        path : path.resolve(__dirname, &quot;dist&quot;),
+    },
+    module : {
+    	reles : [{
+            test : /\.css$/,
+            // use : [&quot;style-loader&quot;, &quot;css-loader&quot;], // html 내에 style 태그로 css 생성
+            use : [MiniCssExtractPlugin.loader, &quot;css-loader&quot;], 
+            // css파일이 생성되고 html에 link 태그로 불러오기, 
+        }]
+    },
+    plugins : [
+    	new HtmlWebpackPlugin({
+    		template : &quot;./index.html&quot;,
+    	}),
+        new MiniCssExtractPlugin({
+        	filename : &quot;common.css&quot;, // 만들어질 css 파일이름
+        }),
+    ],
+    devServer : {
+    	static : {
+        	directory : path.resolve(__dirname, 'dist')
+        },
+        port : 8080
+    }
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이미지 파일 불러오기&lt;/p&gt;
+&lt;pre id=&quot;code_1651571464224&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ npm i -D file-loader&lt;/code&gt;&lt;/pre&gt;
+&lt;pre id=&quot;code_1651571597298&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// webpack.config.js
+
+const path = require(&quot;path&quot;); 
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;); 
+const MiniCssExtractPlugin = require(&quot;mini-css-extract-plugin&quot;);
+
+module.exports = {
+	entry : './src/index.js',
+    output : { 
+    	filename : &quot;main.js&quot;,
+        path : path.resolve(__dirname, &quot;dist&quot;),
+    },
+    module : {
+    	reles : [
+            {
+                test : /\.css$/,
+                use : [MiniCssExtractPlugin.loader, &quot;css-loader&quot;],
+            },
+            { // 추가내용
+            	test : /\.jpg$/,
+                use : [&quot;file.loader&quot;]
+            }
+        ]
+    },
+    plugins : [
+    	new HtmlWebpackPlugin({
+    		template : &quot;./index.html&quot;,
+    	}),
+        new MiniCssExtractPlugin({
+        	filename : &quot;common.css&quot;,
+        }),
+    ],
+    devServer : {
+    	static : {
+        	directory : path.resolve(__dirname, 'dist')
+        },
+        port : 8080
+    }
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;사용하지 않는 파일 정리해주는 플러그인&lt;/p&gt;
+&lt;pre id=&quot;code_1651571881626&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ npm i -D clean-webpack-plugin&lt;/code&gt;&lt;/pre&gt;
+&lt;pre id=&quot;code_1651572012666&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// webpack.config.js
+
+const path = require(&quot;path&quot;); 
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;); 
+const MiniCssExtractPlugin = require(&quot;mini-css-extract-plugin&quot;);
+const { CleanWebpackPlugin } = require(&quot;clean-webpack-plugin&quot;);
+
+module.exports = {
+	entry : './src/index.js',
+    output : { 
+    	filename : &quot;main.js&quot;,
+        path : path.resolve(__dirname, &quot;dist&quot;),
+    },
+    module : {
+    	reles : [
+            {
+                test : /\.css$/,
+                use : [MiniCssExtractPlugin.loader, &quot;css-loader&quot;],
+            },
+            {
+            	test : /\.jpg$/,
+                use : [&quot;file.loader&quot;]
+            }
+        ]
+    },
+    plugins : [
+    	new HtmlWebpackPlugin({
+    		template : &quot;./index.html&quot;,
+    	}),
+        new MiniCssExtractPlugin({
+        	filename : &quot;common.css&quot;,
+        }),
+        new CleanWebpackPlugin
+    ],
+    devServer : {
+    	static : {
+        	directory : path.resolve(__dirname, 'dist')
+        },
+        port : 8080
+    }
+};&lt;/code&gt;&lt;/pre&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>etc</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/22</guid>
+			<comments>https://ananas.tistory.com/22#entry22comment</comments>
+			<pubDate>Tue, 03 May 2022 18:53:53 +0900</pubDate>
+		</item>
+		<item>
+			<title>Webpack 셋팅하기 1</title>
+			<link>https://ananas.tistory.com/21</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;h3 data-ke-size=&quot;size23&quot;&gt;Webpack 설치&lt;/h3&gt;
+&lt;pre id=&quot;code_1651569200659&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ npm init -y
+$ npm install webpack webpack-cli --save-dev&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif; letter-spacing: 0px;&quot;&gt;webpack.config.js 파일을 생성&lt;/span&gt;&lt;/p&gt;
+&lt;pre id=&quot;code_1651568396986&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// webpack.config.js
+
+const path = require(&quot;path&quot;); // 노드에서 제공하는 패스모드 활용
+
+module.exports = {
+	entry : './src/index.js', // 시작파일
+    output : { // 만들어지는 최종파일을 내보내는 옵션
+    	filename : &quot;main.js&quot;,
+        path : path.resolve(__dirname, &quot;dist&quot;), // 폴드 현재경로 하위 -&amp;gt; 폴더명
+    },
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;package.json에서 빌드 모드 추가해주기&lt;/p&gt;
+&lt;pre id=&quot;code_1651569223042&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// package.json
+
+&quot;scripts&quot;: {
+	&quot;build&quot; : &quot;webpack&quot;,
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;$ npm run build&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;여기까지 하면 빌드된 main.js 파일이 dist 폴더에 생성된다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;하지만 배포하기 위해선 index.html 파일이 필요하니 html 플러그인을 설치하겠다.&lt;/p&gt;
+&lt;pre id=&quot;code_1651569249024&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ npm i html-webpack-plugin&lt;/code&gt;&lt;/pre&gt;
+&lt;pre id=&quot;code_1651569162960&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// webpack.config.js
+
+const path = require(&quot;path&quot;); // 노드에서 제공하는 패스모드 활용
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;); // 터미널에 설치후 사용
+
+module.exports = {
+	entry : './src/index.js', // 시작파일
+    output : { // 만들어지는 최종파일을 내보내는 옵션
+    	filename : &quot;main.js&quot;,
+        path : path.resolve(__dirname, &quot;dist&quot;), // 폴드 현재경로 하위 -&amp;amp;gt; 폴더명
+    },
+    plugins : [new HtmlWebpackPlugin({
+    		template : &quot;./index.html&quot;,
+    	}
+    )],
+ };&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;$ npm run build&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;여기까지 하면 이후 파일을 수정할 때마다 직접 run build를 하고 직접 서버를 띄워야 해서 불편하다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이때 아래의 명령어를 설치해주면 자동으로 서버를 띄워줘서 편해진다!&lt;/p&gt;
+&lt;pre id=&quot;code_1651569304289&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ npm i webpack-dev-server -D&lt;/code&gt;&lt;/pre&gt;
+&lt;pre id=&quot;code_1651569495899&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// webpack.config.js
+
+const path = require(&quot;path&quot;); // 노드에서 제공하는 패스모드 활용
+const HtmlWebpackPlugin = require(&quot;html-webpack-plugin&quot;); // 터미널에 설치후 사용
+
+module.exports = {
+	entry : './src/index.js', // 시작파일
+    output : { // 만들어지는 최종파일을 내보내는 옵션
+    	filename : &quot;main.js&quot;,
+        path : path.resolve(__dirname, &quot;dist&quot;), // 폴드 현재경로 하위 -&amp;amp;gt; 폴더명
+    },
+    plugins : [
+    	new HtmlWebpackPlugin({
+    		template : &quot;./index.html&quot;,
+    	}),
+    ],
+    devServer : {
+    	static : {
+        	directory : path.resolve(__dirname, 'dist')
+        },
+        port : 8080
+    }
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;pre id=&quot;code_1651569649678&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;// package.json
+
+&quot;scripts&quot;: {
+	&quot;start&quot; : &quot;webpack serve --open --mode=development&quot;, 
+    // webpack devServer는 개발자 모드에서만 사용가능
+	&quot;build&quot; : &quot;webpack --mode=production&quot;,
+    // 개발모드로 빌드시 코드가 더 복잡하게 나옴. 디버깅하기 좋으나 배포는 프러덕션 모드로 진행
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=zal9HVgrMaQ&quot;&gt;https://www.youtube.com/watch?v=zal9HVgrMaQ&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=zal9HVgrMaQ&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/dpqn0W/hyOgzSOfhW/VpRWIknRfcugMG4hQHKimK/img.jpg?width=480&amp;amp;height=360&amp;amp;face=0_0_480_360&quot; data-video-width=&quot;480&quot; data-video-height=&quot;360&quot; data-video-origin-width=&quot;480&quot; data-video-origin-height=&quot;360&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/zal9HVgrMaQ&quot; width=&quot;480&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>etc</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/21</guid>
+			<comments>https://ananas.tistory.com/21#entry21comment</comments>
+			<pubDate>Tue, 03 May 2022 18:27:40 +0900</pubDate>
+		</item>
+		<item>
+			<title>TypeScript 배우기 1</title>
+			<link>https://ananas.tistory.com/20</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif; letter-spacing: 0px;&quot;&gt;왜 타입스크립트를 배우는가?&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;JavaScript는 동적언어로 런타임에 타입이 결정되며 오류를 발견하다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;반면 Java, TypeScript는 정적언어로 컴파일 타임에 타입이 결정되고 오류를 발견한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;해서 오류를 확인하기 위해 끊임없이 console.log를 찍어보아야하는 자바스크립트의 단점을 보안하기 위해 타입스크립트를 사용한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=5oGAkQsGWkc&amp;amp;list=PLZKTXPmaJk8KhKQ_BILr1JKCJbR0EGlx0&amp;amp;index=1&quot;&gt;코딩앙마의 TypeScript&lt;/a&gt;&lt;/p&gt;
+&lt;figure data-ke-type=&quot;video&quot; data-ke-style=&quot;alignCenter&quot; data-video-host=&quot;youtube&quot; data-video-url=&quot;https://www.youtube.com/watch?v=5oGAkQsGWkc&quot; data-video-thumbnail=&quot;https://scrap.kakaocdn.net/dn/gb8WX/hyOe6X8xYK/8y5ZqcvfkFAEHwZ9BXJNIK/img.jpg?width=1280&amp;amp;height=720&amp;amp;face=0_0_1280_720&quot; data-video-width=&quot;860&quot; data-video-height=&quot;484&quot; data-video-origin-width=&quot;860&quot; data-video-origin-height=&quot;484&quot; data-ke-mobilestyle=&quot;widthContent&quot;&gt;&lt;iframe src=&quot;https://www.youtube.com/embed/5oGAkQsGWkc&quot; width=&quot;860&quot; height=&quot;484&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;모든 프로그래밍 언어에 장단점이 있듯이 자바스크립트도 언어가 잘 정제되기 이전에 서둘러 출시된 문제와 과거 웹페이지의 보조적인 기능을 수행하기 위해 한정적인 용도로 만들어진 태생적 한계로 좋은 점도, 나쁜 점도 많은 것이 사실이다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;자바스크립트는 C나 Java와 같은 언어와는 구별되는 특성이 있다.&lt;/p&gt;
+&lt;ul style=&quot;list-style-type: disc;&quot; data-ke-list-type=&quot;disc&quot;&gt;
+&lt;li&gt;&lt;b&gt;Prototype-based Object Oriented Language&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Scope와&amp;nbsp;this&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;동적 타입(dynamic typed) 언어 혹은 느슨한 타입(loosely typed) 언어&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;&quot;&gt;이와 같은 특성은 클래스 기반 객체지향 언어(Java, C++, C# 등)에 익숙한 개발자를 혼란스럽게 하며 코드가 복잡해질 수 있고 디버그와 테스트 공수가 증가하는 등의 문제를 일으킬 수 있어 특히 규모가 큰 프로젝트에서는 주의하여야 한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;&quot;&gt;이같은 자바스크립트의 태생적 문제를 극복하고자&amp;nbsp;CoffeeScript,&amp;nbsp;Dart,&amp;nbsp;Haxe와 같은&amp;nbsp;&lt;b&gt;AltJS&lt;/b&gt;(자바스크립트의 대체 언어)가 등장하였다.&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;&quot;&gt;TypeScript 또한 자바스크립트 대체 언어의 하나로써&amp;nbsp;&lt;b&gt;자바스크립트(ES5)의 Superset(상위확장)&lt;/b&gt;이다. C#의 창시자인 덴마크 출신 소프트웨어 엔지니어&amp;nbsp;Anders Hejlsberg(아네르스 하일스베르)가 개발을 주도한 TypeScript는 Microsoft에서 2012년 발표한 오픈소스로, 정적 타이핑을 지원하며 ES6(ECMAScript 2015)의 클래스, 모듈 등과 ES7의 Decorator 등을 지원한다.&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;&quot;&gt;TypeScript는 ES5의 Superset이므로 기존의 자바스크립트(ES5) 문법을 그대로 사용할 수 있다. 또한, ES6의 새로운 기능들을 사용하기 위해&amp;nbsp;Babel과 같은 별도 트랜스파일러(Transpiler)를 사용하지 않아도 ES6의 새로운 기능을 기존의 자바스크립트 엔진(현재의 브라우저 또는 Node.js)에서 실행할 수 있다.&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;&quot;&gt;이후&amp;nbsp;ECMAScript의 업그레이드에 따른 새로운 기능을 지속적으로 추가할 예정이여서 매년 업그레이드될 ECMAScript의 표준을 따라갈 수 있는 좋은 수단이 될 것이다.&lt;/span&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;span style=&quot;font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;&quot;&gt;출처 :&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, 돋움, sans-serif;&quot;&gt;&lt;a href=&quot;https://poiemaweb.com/typescript-introduction&quot;&gt;https://poiemaweb.com/typescript-introduction&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>typescript</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/20</guid>
+			<comments>https://ananas.tistory.com/20#entry20comment</comments>
+			<pubDate>Mon, 02 May 2022 18:14:03 +0900</pubDate>
+		</item>
+		<item>
+			<title>[자바스크립트] 없는 숫자 더하기 - 프로그래머스</title>
+			<link>https://ananas.tistory.com/13</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot;&gt;프로그래머스에서 제공하는 코딩 테스트를 풀어보자!&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;문제는&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;a href=&quot;https://programmers.co.kr/learn/challenges&quot;&gt;여기&lt;/a&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;들어가서 확인하면 된다.&lt;/p&gt;
+&lt;pre id=&quot;code_1647508820641&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;function solution(numbers) {
+    var answer = 0;
+    for(let i=0; i&amp;lt;=9; i++){
+        if(!numbers.includes(i)) answer+=i;
+    }
+    return answer;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;0부터 9까지의 수에서&lt;b&gt; numbers 배열에 포함되지 않은 숫자를 찾아서&lt;/b&gt; 모두 더한 값을 구하는 문제였습니다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;우선 for문으로 i값을 0부터 9로 돌려주고, 이걸 numbers.includes() 메소드로 비교해 주면 된다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;includes() 메소드는 배열 속에 값이 포함되었는지 비교하여 boolean값을 리턴해준다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;해서 모두 더해주면 끝!&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>coding test</category>
+			<category>JavaScript</category>
+			<category>코딩테스트</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/13</guid>
+			<comments>https://ananas.tistory.com/13#entry13comment</comments>
+			<pubDate>Thu, 17 Mar 2022 18:26:44 +0900</pubDate>
+		</item>
+		<item>
+			<title>[자바스크립트] 두 개 뽑아서 더하기 - 프로그래머스</title>
+			<link>https://ananas.tistory.com/12</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot;&gt;프로그래머스에서 제공하는 코딩 테스트를 풀어보자!&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;문제는 &lt;a href=&quot;https://programmers.co.kr/learn/challenges&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;여기&lt;/a&gt; 들어가서 확인하면 된다.&lt;/p&gt;
+&lt;pre id=&quot;code_1647507997005&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;function solution(numbers) {
+    let num = []
+    for(let i=0; i&amp;lt;numbers.length; i++){
+        for(let j = 0; j&amp;lt;numbers.length; j++){
+            if( i != j) // 서로 다른 인덱스에 있는 두 개의 수
+            num.push(numbers[i]+numbers[j]);
+        }
+    }
+    var answer = [...new Set(num)]
+    return answer.sort((a,b)=&amp;gt; a - b)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;문제를 읽어보면 &lt;b&gt;배열 속에서 서로 다른 인덱스에 있는 두 개의 수를 뽑아야 &lt;/b&gt;한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;때문에 for문을 두번 돌려 각각의 숫자를 numbers 배열의 키값으로 사용하는데, 이때 i와 j가 동일하면 안 된다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;해서 if문을 추가해서 i != J 일 때 값을 받아내거나 아니면 j = i+1로 정의해 동일한 인덱스 값이 되는걸 피해준다.&lt;/p&gt;
+&lt;pre id=&quot;code_1647508673115&quot; class=&quot;javascript&quot; data-ke-language=&quot;javascript&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;function solution(numbers) {
+    let num = []
+    for(let i=0; i&amp;lt;numbers.length; i++){
+        for(let j = i+1; j&amp;lt;numbers.length; j++){
+        // 서로 다른 인덱스에 있는 두 개의 수
+            num.push(numbers[i]+numbers[j])
+
+        }
+    }
+    var answer = [...new Set(num)]
+    return answer.sort((a,b)=&amp;gt; a - b)
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그렇게 뽑힌 각각의 수를 더해 변수 num에 넣어준다.&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;마지막에 정렬해주면 끝!&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>coding test</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/12</guid>
+			<comments>https://ananas.tistory.com/12#entry12comment</comments>
+			<pubDate>Thu, 17 Mar 2022 18:18:05 +0900</pubDate>
+		</item>
+		<item>
+			<title>Firebase에 호스팅하기</title>
+			<link>https://ananas.tistory.com/7</link>
+			<description>            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-TE1RZ27jA5WIHsvV&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;p data-ke-size=&quot;size16&quot;&gt;오늘은 다 만든 react 프로젝트를 firebase를 통해 호스팅 해보도록 하자!&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;우선, Firebase는 구글 소유의 모바일 어플리케이션 개발 플랫폼이다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;쉽게 말해 앱 개발 플렛폼인데, PWA(Progressive web app)도 개발 가능하다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이를 이용해 react로 만든 내 앱을 호스팅해 배포할 것이다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;준비물 : 작업이 끝난 react project.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;(빌드까지 마무리해 배포 버전으로 만들어 둔다.)&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그럼 Firebase에 접속한다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='2090' data-origin-height='2334' data-ke-mobilestyle='alignCenter'&gt;&lt;a href='https://firebase.google.com/?hl=ko&amp;amp;amp;amp;amp;gclid=CjwKCAiA9tyQBhAIEiwA6tdCrFiUhRTr01PQwSOGe8wGd2XxXdR8iGaGzWOAK0WwxqU2vLknFP7yyxoCK9EQAvD_BwE&amp;amp;amp;amp;amp;gclsrc=aw.ds' target='_blank'&gt;&lt;img src='https://blog.kakaocdn.net/dn/b61DD0/btruaiL7Shp/Hha6BNJwRQpL8SBBnbV3JK/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb61DD0%2FbtruaiL7Shp%2FHha6BNJwRQpL8SBBnbV3JK%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.20.58.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/a&gt;&lt;figcaption&gt;이미지를 클릭하면 링크로 이동한다.&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;시작하기 또는 상단 탭에 콘솔로 이동을 클릭한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그러면 프로젝트 화면으로 이동되는데 새로운 프로젝트 만들기를 한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;프로젝트명은 영문으로 정한다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='2090' data-origin-height='2334' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/b9OZHw/btruhv4AHEa/PHqE0XVp1KMRySVF5j8Zkk/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/b9OZHw/btruhv4AHEa/PHqE0XVp1KMRySVF5j8Zkk/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb9OZHw%2Fbtruhv4AHEa%2FPHqE0XVp1KMRySVF5j8Zkk%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.23.11.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;간단한 키워드만 쓰더라도 뒤에 랜덤코드를 붙여주기 때문에 사용 가능하다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;계속 누르면, 애널리틱스 사용 설정이 나오는데 추후에도 추가가능하니 마음대로 한다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='461' data-origin-height='469' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/baazAB/btrubttFcBz/Swuir5EJuzRBYr1Y8UgHJ1/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/baazAB/btrubttFcBz/Swuir5EJuzRBYr1Y8UgHJ1/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbaazAB%2FbtrubttFcBz%2FSwuir5EJuzRBYr1Y8UgHJ1%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.25.18.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이렇게 프로젝트가 만들어졌으면 계속을 누른다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='2090' data-origin-height='2334' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/uiXfu/btruc5FjeKN/8djCNndJBbhHoXkLIvp9v1/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/uiXfu/btruc5FjeKN/8djCNndJBbhHoXkLIvp9v1/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FuiXfu%2Fbtruc5FjeKN%2F8djCNndJBbhHoXkLIvp9v1%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.26.01.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;좌측 메뉴에 Hosting에 들어가 시작하기를 누른다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='711' data-origin-height='385' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/bQcAF9/btruefO3A2a/dNHI1K7XPgSkdhfpt8x5t0/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/bQcAF9/btruefO3A2a/dNHI1K7XPgSkdhfpt8x5t0/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbQcAF9%2FbtruefO3A2a%2FdNHI1K7XPgSkdhfpt8x5t0%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.28.56.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;firebase-tools를 설치하라고 나오는데... 맥 답게 오류가 난다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;늘 그렇듯 권한 문제다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;당황하지 말고, &lt;u&gt;Firebase CLI 참조&lt;/u&gt;에 들어간다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그러면 OS별 다양한 해결책을 안내해 준다. 감사하다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='589' data-origin-height='761' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/pSxS4/btrugRmCbWX/fit512RaLtUyM7yp7l7KOK/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/pSxS4/btrugRmCbWX/fit512RaLtUyM7yp7l7KOK/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpSxS4%2FbtrugRmCbWX%2Ffit512RaLtUyM7yp7l7KOK%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.31.18.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;pre id=&quot;code_1645691541640&quot; class=&quot;html xml&quot; data-ke-language=&quot;html&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ curl -sL https://firebase.tools | bash&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그러면 비밀번호를 입력하라고 하는데, 컴퓨터 비밀번호를 입력하면 된다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;설치가 완료 되었다면, 아래 내용을 차례대로 입력한다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='603' data-origin-height='468' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/dfdq9f/btruiR7xddZ/CVXzAAKWVOAlTIC2g8T201/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/dfdq9f/btruiR7xddZ/CVXzAAKWVOAlTIC2g8T201/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdfdq9f%2FbtruiR7xddZ%2FCVXzAAKWVOAlTIC2g8T201%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.34.47.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;pre id=&quot;code_1645691763238&quot; class=&quot;html xml&quot; data-ke-language=&quot;html&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ firebase login&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;Firebase에 로그인하는 건데, google 아이디와 연동하면 쉽게 쓸 수 있다.&lt;/p&gt;
+&lt;pre id=&quot;code_1645691836838&quot; class=&quot;html xml&quot; data-ke-language=&quot;html&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ firebase init&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;위 명령어를 넣으면 호스팅을 위한 설정이 나온다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='658' data-origin-height='465' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/baNv2C/btruedKwTq0/lLDtCOAlnDk9sMqtzv2KM1/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/baNv2C/btruedKwTq0/lLDtCOAlnDk9sMqtzv2KM1/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbaNv2C%2FbtruedKwTq0%2FlLDtCOAlnDk9sMqtzv2KM1%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.38.39.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이렇게 실행되면서 선택지가 나온다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;우리는 호스팅을 할 것이기 때문에 방향키로 &lt;u&gt;Configure&amp;nbsp;files&amp;nbsp;for&amp;nbsp;Firebase&amp;nbsp;Hosting&amp;nbsp;and&amp;nbsp;(optionally)&amp;nbsp;set&amp;nbsp;up&amp;nbsp;GitHu&lt;/u&gt;&lt;br /&gt;&lt;u&gt;b Action deploys&lt;/u&gt;로 이동해 스페이스바로 선택한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그리고 엔터!&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='619' data-origin-height='130' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/GJB7g/btrt7qRfGFY/C6aivJqkUSHmdZn0NRL0lk/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/GJB7g/btrt7qRfGFY/C6aivJqkUSHmdZn0NRL0lk/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FGJB7g%2Fbtrt7qRfGFY%2FC6aivJqkUSHmdZn0NRL0lk%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.40.52.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;프로젝트 셋업이 나오면 기존의 프로젝트를 쓸 지, 새로 만들지 물어보는데 앞서서 이미 프로젝트를 만들었기 때문에 그 프로젝트를 선택해준다.(이미 호스팅 됐던 프로젝트라 자동으로 선택된 모습이다ㅎ..ㅎ)&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='639' data-origin-height='275' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/cXALkO/btruh6X7hUO/mAmGKxWzNMK581q9yc4L91/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/cXALkO/btruh6X7hUO/mAmGKxWzNMK581q9yc4L91/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcXALkO%2Fbtruh6X7hUO%2FmAmGKxWzNMK581q9yc4L91%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.43.19.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그리고 호스팅 셋업을 물어보는데,&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;퍼블릭 디렉토리는 react 프로젝트를 배포 버전으로 빌드한 상태이기 때문에, 리액트 프로젝트 폴더 중 build 폴더에 준비가 되어 있을 것이다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;해서 build 라고 입력해 준다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;다음 index.html이 메인 페이지고 이에 서브페이지가 모두 연동된 단일 앱이라면 y를 입력한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;깃허브 연동은 선택사항이다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;마지막 질문이 중요한다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&lt;b&gt;File&amp;nbsp;build/index.html&amp;nbsp;already&amp;nbsp;exists.&amp;nbsp;Overwrite?&amp;nbsp;&lt;/b&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;여기서 y를 선택한다면... firebase에서 주는 디폴트 index.html이 생성된다.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;해서 호스팅이 완료되더라도 처음보는 화면을 보게된다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='1280' data-origin-height='1081' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/cT49AQ/btrugQ2iKas/dDB5fDQmEZvzl7Uew4iTUk/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/cT49AQ/btrugQ2iKas/dDB5fDQmEZvzl7Uew4iTUk/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcT49AQ%2FbtrugQ2iKas%2FdDB5fDQmEZvzl7Uew4iTUk%2Fimg.png' data-filename='img1.daumcdn.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;이 화면... 얄미움.&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;그러니 앱 개발 작업이 완료된 상태라면 File build/index.html already exists. Overwrite? 에 당당하게 &lt;b&gt;No!&lt;/b&gt;를 하면 된다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class='imageblock alignCenter' data-origin-width='680' data-origin-height='186' data-ke-mobilestyle='alignCenter'&gt;&lt;span data-url='https://blog.kakaocdn.net/dn/b7pSnV/btruexO6E6l/z3FKBFDTKGc3oiBAn6LzA0/img.png' data-lightbox='lightbox' data-alt=''&gt;&lt;img src='https://blog.kakaocdn.net/dn/b7pSnV/btruexO6E6l/z3FKBFDTKGc3oiBAn6LzA0/img.png' srcset='https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb7pSnV%2FbtruexO6E6l%2Fz3FKBFDTKGc3oiBAn6LzA0%2Fimg.png' data-filename='스크린샷 2022-02-24 오후 5.49.29.png' data-ke-mobilestyle='alignCenter'/&gt;&lt;/span&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;pre id=&quot;code_1645692587400&quot; class=&quot;html xml&quot; data-ke-language=&quot;html&quot; data-ke-type=&quot;codeblock&quot;&gt;&lt;code&gt;$ firebase deploy&lt;/code&gt;&lt;/pre&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;마지막으로 호스팅 명령어를 넣어주면 끝!&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-ke-size=&quot;size16&quot;&gt;성공!&lt;/p&gt;            &lt;div class=&quot;revenue_unit_wrap &quot;&gt;
+                &lt;div class=&quot;revenue_unit_item adfit&quot;&gt;
+                    &lt;div class=&quot;revenue_unit_info&quot;&gt;728x90&lt;/div&gt;
+                    &lt;ins class=&quot;kakao_ad_area&quot; style=&quot;display:none;&quot; 
+                         data-ad-unit = &quot;DAN-nWEcp22PYnndEbJH&quot; 
+                         data-ad-width = &quot;728&quot; 
+                         data-ad-height = &quot;90px&quot;&gt;
+                    &lt;/ins&gt; 
+                    &lt;script type=&quot;text/javascript&quot; src=&quot;//t1.daumcdn.net/kas/static/ba.min.js&quot; async&gt;&lt;/script&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;</description>
+			<category>CS 지식</category>
+			<category>Firebase</category>
+			<category>Hosting</category>
+			<category>Mac</category>
+			<category>node.js</category>
+			<author>NAS-524</author>
+			<guid isPermaLink="true">https://ananas.tistory.com/7</guid>
+			<comments>https://ananas.tistory.com/7#entry7comment</comments>
+			<pubDate>Thu, 24 Feb 2022 17:50:09 +0900</pubDate>
+		</item>
+	</channel>
+</rss>

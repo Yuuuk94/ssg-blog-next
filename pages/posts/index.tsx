@@ -2,6 +2,8 @@ import Layout from "../../components/common/layout";
 import PostsList from "../../components/post/posts-list";
 import { getAllPosts } from "../../lib/post-api";
 import Post from "../../interfaces/post";
+import type { NextPage } from "next";
+import { getRSS } from "../../lib/tistory-api";
 
 type Props = {
   allPosts: Post[];
@@ -9,6 +11,8 @@ type Props = {
 
 const Posts = ({ allPosts }: Props) => {
   const posts = allPosts;
+  getRSS();
+
   return (
     <Layout>
       <PostsList posts={posts} />
@@ -26,7 +30,6 @@ export const getStaticProps = async () => {
     "coverImage",
     "excerpt",
   ]);
-
   return {
     props: { allPosts },
   };
