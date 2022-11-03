@@ -14,7 +14,7 @@ export default Header;
 
 const HeaderTitle = () => {
   return (
-    <h1 className="text-md font-semibold text-textSub hover:text-gray">
+    <h1 className="text-md font-semibold text-textSub">
       <Link href="/">:LOGO</Link>
     </h1>
   );

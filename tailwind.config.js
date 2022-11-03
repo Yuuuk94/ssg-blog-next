@@ -6,8 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Helvetica Neue", "Noto Sans KR"],
-      serif: ["Times", "Noto Serif KR"],
+      sans: ["Helvetica Neue", "sans-serif"],
+      serif: ["Times"],
     },
     colors: {
       white: "#FFFFFF",
