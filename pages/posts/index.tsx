@@ -11,8 +11,6 @@ type Props = {
 
 const Posts = ({ allPosts }: Props) => {
   const posts = allPosts;
-  getRSS();
-
   return (
     <Layout>
       <PostsList posts={posts} />
