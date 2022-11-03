@@ -8,4 +8,7 @@
   .gradient {
     @apply bg-gradient-to-r from-skyBlue to-pink;
   }
+  .content-underline {
+    @apply underline decoration-2 decoration-textSub;
+  }
 }

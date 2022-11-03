@@ -10,16 +10,22 @@ type PostsListProps = {
 
 const PostsList = ({ posts }: PostsListProps) => {
   const allPosts = posts;
-  const [showNm, setShowNm] = useState<Number>(6);
+  
+  const [showNm, setShowNm] = useState<number>(6);
+  const [showBtn, setShowBtn] = useState<boolean>(true);
+
   const sumNm = () => {
+    function sum(a: number, b: number): number {
+      return a + b;
+    }
+    let num = sum(showNm, 6);
     if (showNm < allPosts.length - 6) {
-      setShowNm(6 + showNm);
+      setShowNm(num);
     } else {
-      setShowNm(6 + showNm);
+      setShowNm(num);
       setShowBtn(false);
     }
   };
-  const [showBtn, setShowBtn] = useState<Boolean>(true);
 
   return (
     <>
