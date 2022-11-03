@@ -1,12 +1,23 @@
+import { NextPage } from "next";
+import AnimetionImg from "../../components/common/AnimetionImg";
 import Layout from "../../components/common/layout";
 import { NeoContent } from "../../components/common/styled-component";
 
-const About = () => {
+const About: NextPage = () => {
   return (
     <Layout>
       <NeoContent>
-        <h2>Shin, Yukyung</h2>
-        <p>email yuuuk94@gmail.com</p>
+        <h2 className="text-lg text-textSub font-semibold">
+          프론트엔드 개발자
+        </h2>
+        <h2 className="mt-1 mb-4 text-3xl font-bold  text-textMain">
+          신유경 <span className="text-textSub">Shin, Yukyung</span>
+        </h2>
+        <p className="mb-16 text-md text-textMain font-semibold text-end hover:content-underline">
+          <span className="text-textSub ">email</span>
+          &nbsp;&nbsp;yuuuk94@gmail.com
+        </p>
+        <AnimetionImg />
         <p>
           제가 생각하는 프론트엔드 개발은 사용자가 가장 먼저 만나는
           “얼굴”입니다.
@@ -22,7 +33,9 @@ const About = () => {
           개발뿐만 아니라 기획과 디자인에도 관심이 많고 이해도가 높습니다.
           다양한 분야의 사람들과 소통하기를 좋아합니다.
         </p>
-        <img src="/assets/blog/hello-world/cover.jpg" />
+      </NeoContent>
+      <NeoContent>
+        <div>기술 스택</div>
       </NeoContent>
     </Layout>
   );
