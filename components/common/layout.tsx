@@ -2,6 +2,8 @@ import Head from "next/head";
 import Meta from "./meta";
 import Header from "../header";
 import Footer from "../footer";
+import { LinkedIcon, TopBtn } from "../icon-bar/linked-icon";
+
 type props = {
   children: React.ReactNode;
 };
@@ -9,12 +11,12 @@ type props = {
 const Layout = ({ children }: props) => {
   return (
     <>
-      <Head>
-        <Meta />
-      </Head>
+      <Meta />
       <Header />
-      <main className="container lg m-auto px-4 py-8">{children}</main>
+      <LinkedIcon />
+      <main className="mx-auto px-4 pt-4 pb-8 w-10/12">{children}</main>
       <Footer />
+      <TopBtn />
     </>
   );
 };

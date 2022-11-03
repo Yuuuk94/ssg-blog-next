@@ -1,7 +1,7 @@
 import Layout from "../components/common/layout";
 import MainPostsList from "../components/post/main-posts-list";
 import Post from "../interfaces/post";
-import Main from "../components/main";
+import MainContent from "../components/main";
 import { getAllPosts } from "../lib/post-api";
 
 type Props = {
@@ -10,9 +10,10 @@ type Props = {
 
 const Home = ({ allPosts }: Props) => {
   const Posts = allPosts;
+  console.log(Posts);
   return (
     <Layout>
-      <Main />
+      <MainContent />
       {Posts.length > 0 && <MainPostsList posts={Posts} />}
     </Layout>
   );
