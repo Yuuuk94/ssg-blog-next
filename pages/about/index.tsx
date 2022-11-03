@@ -13,8 +13,8 @@ const About: NextPage = () => {
         <h2 className="mt-1 mb-4 text-3xl font-bold  text-textMain">
           신유경 <span className="text-textSub">Shin, Yukyung</span>
         </h2>
-        <p className="mb-16 text-md text-textMain font-semibold text-end hover:content-underline">
-          <span className="text-textSub ">email</span>
+        <p className="mb-16 text-md text-textMain font-semibold">
+          <span className="text-textSub">email</span>
           &nbsp;&nbsp;yuuuk94@gmail.com
         </p>
         <AnimetionImg />
