@@ -3,7 +3,7 @@ import { NeoContent } from "../common/styled-component";
 
 const Menu = () => {
   return (
-    <nav className="flex justify-between w-1/3 ">
+    <nav className="flex items-center">
       <MenuItem name="about" />
       <MenuItem name="works" />
       <MenuItem name="posts" />
@@ -19,7 +19,7 @@ type MenuItemProps = {
 
 const MenuItem = ({ name }: MenuItemProps) => {
   return (
-    <div className="pl-4 text-md font-bold text-textSub hover:gray">
+    <div className="pl-8 text-lg font-bold text-textSub hover:text-textMain">
       <Link href={`/${name}`}>{name}</Link>
     </div>
   );

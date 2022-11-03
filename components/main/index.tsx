@@ -2,18 +2,28 @@ import Link from "next/link";
 import { NeoContent } from "../common/styled-component";
 
 const MainContent = () => {
+  const images = [
+    "/assets/icon/galaxy.png",
+    "/assets/icon/programming.png",
+    "/assets/icon/atom.png",
+    "/assets/icon/desk-lamp.png",
+    "/assets/icon/code.png",
+  ];
   return (
     <>
       <NeoContent>
         <div>
-          <div className="flex items-center">
-            <p className="w-main-img min-w-main-img">
-              <img
-                src="/assets/icon/atom.png"
-                alt="React icons created by Freepik - Flaticon"
-              />
+          <div className="flex flex-col items-start">
+            <p className="mb-4 flex">
+              {images?.map((img) => (
+                <img
+                  className="w-main-img min-w-main-img mx-2"
+                  src={img}
+                  alt="icons created by Freepik - Flaticon"
+                />
+              ))}
             </p>
-            <div className="ml-8">
+            <div>
               <h2 className="text-lg font-semibold  text-textSub">
                 안녕하세요,&nbsp;
                 <span className="text-textMain">

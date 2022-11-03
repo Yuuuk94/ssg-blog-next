@@ -22,12 +22,16 @@ module.exports = {
       boxShadow: {
         "custom-neo-t": "-10px -10px 30px 0 #FFFFFF",
         "custom-neo-b": "10px 10px 30px 0 #AEAEC0",
+        "neo-icon-t": "-10px -10px 30px 0 #FFFFFF",
+        "neo-icon-b": "4px 4px 30px 0 #AEAEC0",
       },
       width: {
-        "main-img": "80px",
+        "main-img": "32px",
+        "icon-img": "40px",
       },
       minWidth: {
-        "main-img": "80px",
+        "main-img": "28px",
+        "icon-img": "40px",
       },
     },
   },

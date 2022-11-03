@@ -4,10 +4,20 @@ type Props = {
 
 export const NeoContent = ({ children }: Props) => {
   return (
-    <div className="bg-bgGray rounded-2xl px-12 py-8 mb-12 relative">
+    <div className="bg-bgGray rounded-2xl px-8 py-12 mb-12 relative">
       {children}
-      <div className="rounded-2xl shadow-custom-neo-b absolute left-0 right-0 top-0 bottom-0 -z-10"></div>
-      <div className="rounded-2xl shadow-custom-neo-t absolute left-0 right-0 top-0 bottom-0 -z-10"></div>
+      <div className="rounded-2xl shadow-custom-neo-b absolute inset-0 -z-20"></div>
+      <div className="rounded-2xl shadow-custom-neo-t absolute inset-0 -z-20"></div>
+    </div>
+  );
+};
+
+export const NeoIcon = ({ children }: Props) => {
+  return (
+    <div className="bg-bgGray rounded-full mb-4 relative cursor-pointer">
+      {children}
+      <div className="rounded-full shadow-neo-icon-b absolute inset-0 -z-10"></div>
+      <div className="rounded-full shadow-neo-icon-t absolute inset-0 -z-10"></div>
     </div>
   );
 };

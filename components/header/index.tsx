@@ -3,7 +3,7 @@ import Menu from "./menu";
 
 const Header = () => {
   return (
-    <div className="flex justify-between mx-auto px-8 py-8 w-10/12">
+    <div className="flex justify-between items-center mx-auto px-8 py-8 w-9/12">
       <HeaderTitle />
       <Menu />
     </div>
@@ -14,7 +14,7 @@ export default Header;
 
 const HeaderTitle = () => {
   return (
-    <h1 className="text-md font-semibold text-textSub hover:text-gray">
+    <h1 className="text-lg font-semibold text-textSub hover:text-textMain">
       <Link href="/">:LOGO</Link>
     </h1>
   );
