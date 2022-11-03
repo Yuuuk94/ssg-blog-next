@@ -10,6 +10,7 @@ type Props = {
 
 const Home = ({ allPosts }: Props) => {
   const Posts = allPosts;
+  console.log(Posts);
   return (
     <Layout>
       <MainContent />
