@@ -52,9 +52,7 @@ const About: NextPage = () => {
       </NeoContent>
       <NeoContent>
         <div>
-          <p className="pb-6 text-lg font-semibold leading-snug text-textMain">
-            Experience
-          </p>
+          <p className="pb-4 text-lg text-textSub font-semibold">Experience</p>
           <div className="text-textMain">
             <p className="mb-2 text-lg font-bold">유비케어</p>
             <p className="text-sm">플랫폼 개발팀 / 프론트엔드 엔지니어</p>
@@ -97,7 +95,7 @@ const About: NextPage = () => {
       </NeoContent>
       <NeoContent>
         <div>
-          <p className="pb-6 text-lg font-semibold leading-snug text-textMain">
+          <p className="pb-4 text-lg text-textSub font-semibold">
             Other Experience
           </p>
           <div className="text-textMain">
@@ -134,9 +132,7 @@ const About: NextPage = () => {
       </NeoContent>
       <NeoContent>
         <div>
-          <p className="pb-6 text-lg font-semibold leading-snug text-textMain">
-            Skills
-          </p>
+          <p className="pb-4 text-lg text-textSub font-semibold">Skills</p>
           <p className="mb-2 text-sm text-textMain leading-relaxed">
             React / Vue / TypeScript / Next.js
             <br />
