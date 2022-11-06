@@ -1,37 +1,35 @@
 export type RSSType = {
-  rss?: { $: RSSXml; channel: Array<ChannelType> } | void | object;
-  $?: RSSXml;
-  channel?: Array<ChannelType>;
-};
-
-export type RSSXml = {
-  version: string;
+  rss?: {
+    _declaration: {
+      _attributes: {
+        encoding: string;
+        version: string;
+      };
+    };
+    channel: ChannelType[];
+  };
 };
 
 export type ChannelType = {
-  description: Array<string>;
-  generator: Array<string>;
-  item: Array<RSSItemType>;
-  language: Array<string>;
-  link: Array<string>;
-  managingEditor: Array<string>;
-  pubDate: Array<string>;
-  title: Array<string>;
-  ttl: Array<string>;
+  _text?: string;
+  description: { _text: string };
+  generator: { _text: string };
+  item: RSSItemType[];
+  language: { _text: string };
+  link: { _text: string };
+  managingEditor: { _text: string };
+  pubDate: { _text: string };
+  title: { _text: string };
+  ttl: { _text: string };
 };
 
 export type RSSItemType = {
-  author: Array<string>;
-  category: Array<string>;
-  comments: Array<string>;
-  description: Array<string>;
-  guid: Array<ItemGuidType>;
-  link: Array<string>;
-  pubDate: Array<string>;
-  title: Array<string>;
-};
-
-export type ItemGuidType = {
-  $: string;
-  _: string;
+  author: { _text: string };
+  category?: { _text: string }[] | { _text: string };
+  comments: { _text: string };
+  description: { _text: string };
+  guid: { _attributes: { isPermaLink: string }; _text: string };
+  link: { _text: string };
+  pubDate: { _text: string };
+  title: { _text: string };
 };
