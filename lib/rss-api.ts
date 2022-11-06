@@ -19,7 +19,7 @@ export async function setRSS() {
       console.log(err);
       // rrs.xml
     });
-  if(res.rss.channel === undefind) {
+  if(res.rss.channel === undefined) {
     return res = {};
   } else {
     return res.rss.channel;
