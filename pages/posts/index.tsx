@@ -1,7 +1,5 @@
 import Layout from "../../components/common/layout";
 import PostsList from "../../components/post/posts-list";
-import { getAllPosts } from "../../lib/post-api";
-import Post from "../../interfaces/post";
 import type { NextPage } from "next";
 import { setRSS } from "../../lib/rss-api";
 import { ChannelType } from "../../interfaces/rss";
