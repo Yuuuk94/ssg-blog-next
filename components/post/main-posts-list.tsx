@@ -10,7 +10,7 @@ type MainPostsListProps = {
 const MainPostsList = ({ posts }: MainPostsListProps) => {
   return (
     <NeoContent>
-      <p className="pb-6 text-lg font-semibold leading-snug text-textMain">
+      <p className="pb-6 text-lg font-semibold leading-snug text-textSub">
         New Posts
       </p>
       {posts.length > 0 &&
@@ -32,7 +32,7 @@ export const MainPost = ({ post }: MainPostsProps) => (
       <h3 className="text-lg font-semibold leading-snug text-textMain">
         {post.title}
       </h3>
-      <DateFormatter dateString={post.date} />
+      {/* <DateFormatter dateString={post.date} /> */}
       <p className="mt-2 text-md leading-snug text-textSub">{post.excerpt}</p>
       <p className="border-b border-textSub mt-4 mb-6"></p>
     </div>

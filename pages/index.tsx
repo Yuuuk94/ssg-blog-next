@@ -1,11 +1,10 @@
 import Layout from "../components/common/layout";
 import MainPostsList from "../components/post/main-posts-list";
-import Post from "../interfaces/post";
 import MainContent from "../components/main";
-import { getAllPosts } from "../lib/post-api";
+import { setRSS } from "../lib/rss-api";
 
 type Props = {
-  allPosts: Post[];
+  allPosts: any;
 };
 
 const Home = ({ allPosts }: Props) => {
@@ -22,14 +21,7 @@ const Home = ({ allPosts }: Props) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "coverImage",
-    "excerpt",
-  ]);
-
+  let allPosts: object | void = await setRSS();
   return {
     props: { allPosts },
   };
