@@ -6,7 +6,7 @@ const client = axios.create({
 });
 
 export async function setRSS() {
-  const res = await client
+  const res: any = await client
     .get("/rss")
     .then((response) => {
       if (response.status === 200) {
@@ -19,9 +19,5 @@ export async function setRSS() {
       console.log(err);
       // rrs.xml
     });
-  if(res.rss.channel === undefined) {
-    return res = {};
-  } else {
-    return res.rss.channel;
-  }
+  return res.rss.channel;
 }

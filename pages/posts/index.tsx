@@ -3,7 +3,6 @@ import PostsList from "../../components/post/posts-list";
 import { getAllPosts } from "../../lib/post-api";
 import Post from "../../interfaces/post";
 import type { NextPage } from "next";
-import { getRSS } from "../../lib/tistory-api";
 
 type Props = {
   allPosts: Post[];
