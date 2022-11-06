@@ -5,8 +5,8 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: "/api/:path*",
-        destination: "https://ananas.tistory.com/:path*",
+        source: "/rss",
+        destination: "https://ananas.tistory.com/rss",
       },
     ];
   },

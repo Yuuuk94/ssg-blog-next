@@ -1,16 +1,17 @@
 import Link from "next/link";
-import Post from "../../interfaces/post";
 import DateFormatter from "../common/date-formatter";
 import { NeoContent, NeoBtn } from "../common/styled-component";
 import { useState } from "react";
+import { RSSItemType } from "../../interfaces/rss";
+import { ItemCategory } from "../common/ItemCategory";
 
 type PostsListProps = {
-  posts: Post[];
+  posts: RSSItemType[];
 };
 
 const PostsList = ({ posts }: PostsListProps) => {
   const allPosts = posts;
-  
+
   const [showNm, setShowNm] = useState<number>(6);
   const [showBtn, setShowBtn] = useState<boolean>(true);
 
@@ -32,16 +33,7 @@ const PostsList = ({ posts }: PostsListProps) => {
       {allPosts.length > 0 &&
         allPosts.map((post, key) => {
           if (key < showNm) {
-            return (
-              <Post
-                key={key}
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                excerpt={post.excerpt}
-                slug={post.slug}
-              />
-            );
+            return <Post key={key} post={post} />;
           }
         })}
       {showBtn && <ShowMoreBtn more={sumNm} />}
@@ -52,24 +44,21 @@ const PostsList = ({ posts }: PostsListProps) => {
 export default PostsList;
 
 type PostProps = {
-  title: string;
-  coverImage: string;
-  date: string;
-  excerpt: string;
-  slug: string;
+  post: RSSItemType;
 };
 
-export const Post = ({ title, coverImage, date, excerpt, slug }: PostProps) => {
+export const Post = ({ post }: PostProps) => {
   return (
     <NeoContent>
-      <Link as={`/posts/${slug}`} href="/posts/[slug]">
+      <Link as={`/posts/${24}`} href="/posts/[slug]">
         <div className="cursor-pointer hover:underline decoration-2 decoration-textSub">
           <h3 className="text-xl font-semibold leading-snug text-textMain">
-            {title}
+            {post.title._text}
           </h3>
-          <DateFormatter dateString={date} />
-          <p className="mt-2 text-xl leading-snug text-textSub">{excerpt}</p>
+          {/* <DateFormatter dateString={post.pubDate._text} /> */}
+          <p className="mt-2 text-xl leading-snug text-textSub">{}</p>
           <p className="mt-2 text-lg leading-snug text-textSub">read more...</p>
+          <ItemCategory category={post.category} />
         </div>
       </Link>
     </NeoContent>

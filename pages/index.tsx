@@ -1,20 +1,19 @@
 import Layout from "../components/common/layout";
 import MainPostsList from "../components/post/main-posts-list";
-import Post from "../interfaces/post";
 import MainContent from "../components/main";
-import { getAllPosts } from "../lib/post-api";
+import { setRSS } from "../lib/rss-api";
+import { ChannelType } from "../interfaces/rss";
 
 type Props = {
-  allPosts: Post[];
+  allPosts: ChannelType;
 };
 
 const Home = ({ allPosts }: Props) => {
-  const Posts = allPosts;
-  console.log(Posts);
+  const posts = allPosts.item;
   return (
     <Layout>
       <MainContent />
-      {Posts.length > 0 && <MainPostsList posts={Posts} />}
+      {posts.length > 0 && <MainPostsList posts={posts} />}
     </Layout>
   );
 };
@@ -22,14 +21,7 @@ const Home = ({ allPosts }: Props) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "coverImage",
-    "excerpt",
-  ]);
-
+  let allPosts: ChannelType = await setRSS();
   return {
     props: { allPosts },
   };
