@@ -2,6 +2,7 @@ import { NeoContent } from "../common/styled-component";
 import DateFormatter from "../common/date-formatter";
 import Link from "next/link";
 import { RSSItemType } from "../../interfaces/rss";
+import { ItemCategory } from "../common/ItemCategory";
 
 type MainPostsListProps = {
   posts: RSSItemType[];
@@ -28,47 +29,29 @@ type MainPostsProps = {
   post: RSSItemType;
 };
 export const MainPost = ({ post }: MainPostsProps) => {
-  console.log(post);
+  // const description = parse(post.description._text);
+  // description.childNodes.map((tion) => {});
+  // console.log(post);
+
   return (
-    <Link as={`/posts/${24}`} href="/posts/[slug]">
+    <a href={post.link._text} target="_blick">
       <article className="cursor-pointer hover:content-underline">
         <h3 className="text-lg font-semibold leading-snug text-textMain">
           {post.title._text}
         </h3>
+        <span className="mt-2 mr-2 text-md leading-snug text-textSub">
+          {post.author._text}
+        </span>
         <DateFormatter dateString={post.pubDate._text} />
-        {/* <p
+        <p
           className="mt-2 text-md leading-snug text-textSub"
-          dangerouslySetInnerHTML={{ __html: post.description[0] }}
-        /> */}
+          // dangerouslySetInnerHTML={{ __html: }}
+        >
+          ananas tistory에서 내용 확인하러 가기
+        </p>
         <ItemCategory category={post.category} />
         <p className="border-b border-textSub mt-4 mb-6" />
       </article>
-    </Link>
-  );
-};
-
-type ItemCategoryProps = {
-  category: Array<{ _text: string }> | { _text: string } | any;
-};
-
-const ItemCategory = ({ category }: ItemCategoryProps) => {
-  let categories: Array<{ _text: string }> = [];
-  if (Array.isArray(category) === false) {
-    categories.push(category);
-  } else {
-    categories = category;
-  }
-
-  return (
-    <div>
-      {categories?.map((item, key) => (
-        <span
-          key={item._text}
-          className="mt-2 mr-2 text-md leading-snug text-textSub"
-        >
-          {`${item._text}${key === category.length - 1 ? "" : ","}`}
-        </span>
-      ))}
-    </div>
+    </a>
   );
 };
