@@ -10,10 +10,20 @@ type Props = {
 
 const Home = ({ allPosts }: Props) => {
   const posts = allPosts.item;
+  const generator = allPosts.generator._text;
+  const managingEditor = allPosts.managingEditor._text;
+  const title = allPosts.title._text;
   return (
     <Layout>
       <MainContent />
-      {posts.length > 0 && <MainPostsList posts={posts} />}
+      {posts.length > 0 && (
+        <MainPostsList
+          posts={posts}
+          generator={generator}
+          managingEditor={managingEditor}
+          title={title}
+        />
+      )}
     </Layout>
   );
 };

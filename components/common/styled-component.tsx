@@ -12,6 +12,16 @@ export const NeoContent = ({ children }: Props) => {
   );
 };
 
+export const NeoWorkContent = ({ children }: Props) => {
+  return (
+    <div className="bg-bgGray rounded-2xl w-[32%] px-28 py-12 mb-12 relative">
+      {children}
+      <div className="rounded-2xl shadow-custom-neo-b absolute inset-0 -z-40"></div>
+      <div className="rounded-2xl shadow-custom-neo-t absolute inset-0 -z-40"></div>
+    </div>
+  );
+};
+
 export const NeoIcon = ({ children }: Props) => {
   return (
     <div className="bg-bgGray rounded-full p-2 mb-4 relative cursor-pointer">
