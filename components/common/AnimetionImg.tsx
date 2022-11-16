@@ -7,7 +7,7 @@ const AnimetionImg = () => {
     "/assets/icon/code.png",
   ];
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-center min-[770px]:items-start">
       <p className="mb-4 flex">
         {images?.map((img) => (
           <img

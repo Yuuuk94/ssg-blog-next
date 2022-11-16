@@ -11,13 +11,3 @@ type PostType = {
 };
 
 export default PostType;
-
-export type TistoryItemType = {
-  title: string;
-  link: string;
-  description: string;
-  category: string;
-  guid: string;
-  comments: string;
-  pubDate: string;
-};

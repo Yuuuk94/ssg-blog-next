@@ -1,8 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="pb-8">
+    <footer className="pb-4 text-sm">
       <p className="text-center text-gray">
-
         Ⓒ 2022. Yukyung All Rights Reserved. |{" "}
         <a
           className="hover:text-textMain"

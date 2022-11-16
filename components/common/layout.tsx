@@ -13,8 +13,10 @@ const Layout = ({ children }: props) => {
     <>
       <Meta />
       <Header />
+      <main className="mx-auto px-4 min-[770px]:pt-4 pb-2 min-[770px]:pb-8 min-[770px]:w-10/12">
+        {children}
+      </main>
       <LinkedIcon />
-      <main className="mx-auto px-4 pt-4 pb-8 w-10/12">{children}</main>
       <Footer />
       <TopBtn />
     </>

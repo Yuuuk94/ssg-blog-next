@@ -18,7 +18,7 @@ const About: NextPage = () => {
           &nbsp;&nbsp;yuuuk94@gmail.com
         </p>
         <AnimetionImg />
-        <p className="text-md text-textMain font-light leading-loose">
+        <p className="text-md text-textMain font-light">
           제가 생각하는{" "}
           <span className="font-bold">
             프론트엔드 개발은 사용자가 가장 먼저 만나는 “얼굴”
@@ -58,7 +58,10 @@ const About: NextPage = () => {
             <p className="text-sm">플랫폼 개발팀 / 프론트엔드 엔지니어</p>
             <p className="text-sm">2022. 07 ~ 2022. 09 </p>
             <br />
-            <p className="mb-2 font-bold">- 의사 경영 지원 플랫폼</p>
+            <p className="mb-2 font-bold">
+              - 의사 경영 지원 플랫폼{" "}
+              <span className="font-light">2022.08 ~ 2022.09</span>
+            </p>
             <p className="mb-4 text-sm leading-relaxed">
               병원과 의사 경영에 필요한 다양한 서비스를 연결해주는 웹 기반
               플랫폼 서비스
@@ -76,12 +79,18 @@ const About: NextPage = () => {
               <br />
               Vue, Vuetify, CSS, Git, ESLint, Prettier, Zepline, Redmine
             </p>
-            <p className="mb-2 font-bold">- 플랫폼 개발팀 내 세미나 참여</p>
+            <p className="mb-2 font-bold">
+              - 플랫폼 개발팀 내 세미나 참여{" "}
+              <span className="font-light">2022.08 ~ 2022.09</span>
+            </p>
             <p className="mb-4 text-sm leading-relaxed">
               팀 내 세미나에서 "사용자 이탈을 방지하는 UX 아이디어"와
               "리팩터링"에 대해 발표
             </p>
-            <p className="mb-2 font-bold">- 고객센터 콜백 접수 서비스</p>
+            <p className="mb-2 font-bold">
+              - 고객센터 콜백 접수 서비스{" "}
+              <span className="font-light">2022.07</span>
+            </p>
             <p className="mb-4 text-sm leading-relaxed">
               입사 후 처음 참여한 고객센터로부터 콜백 요청하는 웹 기반 서비스
               <br />

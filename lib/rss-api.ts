@@ -7,7 +7,7 @@ const client = axios.create({
 });
 
 export async function setRSS() {
-  const res: any = await client
+  const res: Promise<RSSType> = await client
     .get("/rss")
     .then((response) => {
       if (response.status === 200) {
@@ -19,7 +19,6 @@ export async function setRSS() {
           })
         );
         return parsingData;
-        // return dataSet;
       }
     })
     .catch((err) => {
@@ -27,5 +26,5 @@ export async function setRSS() {
       // rrs.xml
     });
 
-  return res.rss.channel;
+  return (await res).rss.channel;
 }

@@ -9,15 +9,11 @@ export const ItemCategory = ({ category }: ItemCategoryProps) => {
   } else {
     categories = category;
   }
-
   return (
     <div>
       {categories?.map((item, key) => (
-        <span
-          key={item._text}
-          className="mt-2 mr-2 text-md leading-snug text-textSub"
-        >
-          {`${item._text}${key === category.length - 1 ? "" : ","}`}
+        <span key={item._text} className="mt-2 mr-2 text-md text-textMain">
+          {`#${item._text} `}
         </span>
       ))}
     </div>
