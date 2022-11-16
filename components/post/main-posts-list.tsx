@@ -24,14 +24,14 @@ const MainPostsList = ({
   const postTile = title;
   return (
     <NeoContent>
-      <p className="pb-6 text-lg font-semibold leading-snug text-textSub">
+      <p className="min-[770px]:pb-6 text-lg font-semibold leading-snug text-textSub">
         New Posts
       </p>
       {postsItem.length > 0 &&
         postsItem.map((post, key) => {
-          if (key < 5) return <MainPost key={key} post={post} />;
+          if (key < 3) return <MainPost key={key} post={post} />;
         })}
-      <p className="text-end text-md leading-snug text-textSub">
+      <p className="text-end text-sm leading-snug text-textSub">
         from {postTile} by {postManager} | {postGenerator}
       </p>
     </NeoContent>
@@ -44,28 +44,26 @@ type MainPostsProps = {
   post: RSSItemType;
 };
 export const MainPost = ({ post }: MainPostsProps) => {
-  // const description = parse(post.description._text);
-  // description.childNodes.map((tion) => {});
-  // console.log(post);
+  // const description = parse(post.description._text.replaceAll("<a","<p").replaceAll("/a>","/p>"));
 
   return (
     <a href={post.link._text} target="_blick">
       <article className="cursor-pointer hover:content-underline">
-        <h3 className="text-lg font-semibold leading-snug text-textMain">
+        <h3 className="text-lg font-semibold text-textMain">
           {post.title._text}
         </h3>
-        <span className="mt-2 mr-2 text-md leading-snug text-textSub">
+        <span className="mt-2 mr-2 text-md text-textMain">
           {post.author._text}
         </span>
         <DateFormatter dateString={post.pubDate._text} />
-        <p
-          className="mt-2 text-md leading-snug text-textSub"
-          // dangerouslySetInnerHTML={{ __html: }}
-        >
-          ananas tistory에서 내용 확인하러 가기
-        </p>
         <ItemCategory category={post.category} />
-        <p className="border-b border-textSub mt-4 mb-6" />
+        <p
+          className="mt-2 text-sm text-textSub"
+          // dangerouslySetInnerHTML={{ __html: description}}
+        >
+          read more...
+        </p>
+        <p className="border-b border-textSub my-4 min-[770px]:mt-4 min-[770px]:mb-6" />
       </article>
     </a>
   );

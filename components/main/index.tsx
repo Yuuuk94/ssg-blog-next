@@ -14,9 +14,8 @@ const MainContent = () => {
     <>
       <NeoContent>
         <div>
-
           <AnimetionImg />
-          <h2 className="text-lg font-semibold  text-textSub">
+          <h2 className="min-[770px]:text-lg font-semibold  text-textSub">
             안녕하세요,&nbsp;
             <span className="text-textMain">
               씩씩하고 유연한 프론트엔드 개발자, 신유경

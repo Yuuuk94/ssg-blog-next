@@ -1,14 +1,16 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Layout from "../../components/common/layout";
-import { getPostBySlug, getAllPosts } from "../../lib/work-api";
+import { getWorkBySlug, getAllWorks } from "../../lib/work-api";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
+import Image from "next/image";
+import WorkType from "../../interfaces/work";
 
 type Props = {
-  post: PostType;
-  morePosts: PostType[];
+  post: WorkType;
+  morePosts: WorkType[];
   preview?: boolean;
 };
 
@@ -21,12 +23,12 @@ export default function Work({ post, morePosts, preview }: Props) {
     <Layout>
       <Head>
         <title>{post.title}</title>
-        <meta property="og:image" content={post.ogImage.url} />
+        <meta property="og:image" content={post.coverImage} />
       </Head>
       <p>{post.title}</p>
       <p>{post.date}</p>
-      <p dangerouslySetInnerHTML={{ __html: post.content }}></p>
-      <img src={post.coverImage} />
+      <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+      <Image src={post.coverImage} alt="" width="300" height="300" />
     </Layout>
   );
 }
@@ -38,13 +40,15 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
+  const post = getWorkBySlug(params.slug, [
     "title",
     "date",
     "slug",
     "content",
-    "ogImage",
+    "project",
     "coverImage",
+    "URL",
+    "Image",
   ]);
   const content = await markdownToHtml(post.content || "");
 
@@ -59,7 +63,7 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(["slug"]);
+  const posts = getAllWorks(["slug"]);
 
   return {
     paths: posts.map((post) => {

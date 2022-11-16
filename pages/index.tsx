@@ -31,8 +31,9 @@ const Home = ({ allPosts }: Props) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  let allPosts: ChannelType = await setRSS();
+  let allPosts: ChannelType[] = await setRSS();
   return {
     props: { allPosts },
+    revalidate: 60 * 60 * 24,
   };
 };

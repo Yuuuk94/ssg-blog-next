@@ -7,7 +7,7 @@ export const LinkedIcon = () => {
     { img: "/assets/icon/github.png", url: "https://github.com/Yuuuk94" },
   ];
   return (
-    <div className="absolute top-40 right-8">
+    <div className="flex justify-center min-[770px]:block min-[770px]:absolute top-40 right-8">
       {images?.map((img) => (
         <NeoIcon key={img.img}>
           <a href={img.url} className="z-40" target="_blank">
@@ -31,9 +31,12 @@ export const TopBtn = () => {
     });
   }
   return (
-    <div className="fixed bottom-20 right-8" onClick={scrollTop}>
+    <div
+      className="hidden min-[770px]:block fixed bottom-20 right-8"
+      onClick={scrollTop}
+    >
       <NeoIcon>
-        <p className="py-1 text-xs font-semibold text-textSub text-center leading-snug hover:text-textMain">
+        <p className="py-0.5 text-xs font-semibold text-textSub text-center leading-snug hover:text-textMain">
           top
         </p>
       </NeoIcon>

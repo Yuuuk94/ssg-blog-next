@@ -1,6 +1,6 @@
 import Link from "next/link";
 import DateFormatter from "../common/date-formatter";
-import { NeoContent, NeoBtn } from "../common/styled-component";
+import { NeoPostContent, NeoBtn } from "../common/styled-component";
 import { useState } from "react";
 import { RSSItemType } from "../../interfaces/rss";
 import { ItemCategory } from "../common/ItemCategory";
@@ -48,23 +48,31 @@ type PostProps = {
 };
 
 export const Post = ({ post }: PostProps) => {
+  const description = post.description._text
+    .replaceAll("<a", "<div")
+    .replaceAll("/a>", "/div>");
+
   return (
-    <NeoContent>
+    <NeoPostContent>
       <a href={post.link._text} target="_blick">
         <div className="cursor-pointer hover:underline decoration-2 decoration-textSub">
           <h3 className="text-xl font-semibold leading-snug text-textMain">
             {post.title._text}
           </h3>
-          <span className="mt-2 mr-2 text-md leading-snug text-textSub">
+          <span className="mt-2 mr-2 text-md leading-snug text-textMain">
             {post.author._text}
           </span>
           <DateFormatter dateString={post.pubDate._text} />
-          <p className="mt-2 text-xl leading-snug text-textSub">{}</p>
-          <p className="mt-2 text-lg leading-snug text-textSub">read more...</p>
           <ItemCategory category={post.category} />
+          <p
+            className="mt-2 text-md leading-snug text-textSub"
+            // dangerouslySetInnerHTML={{ __html: }}
+          >
+            read more...
+          </p>
         </div>
       </a>
-    </NeoContent>
+    </NeoPostContent>
   );
 };
 

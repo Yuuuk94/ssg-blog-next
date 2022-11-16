@@ -1,5 +1,5 @@
 export type RSSType = {
-  rss?: {
+  rss: {
     _declaration: {
       _attributes: {
         encoding: string;
