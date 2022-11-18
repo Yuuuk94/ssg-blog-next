@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Post from "../../interfaces/post";
 import WorkType from "../../interfaces/work";
 import { NeoWorkContent } from "../common/styled-component";
 import Image from "next/image";
@@ -28,18 +27,25 @@ const Work = ({ work }: WorkProps) => {
   return (
     <NeoWorkContent>
       <Link as={`/works/${work.slug}`} href="/works/[slug]">
-        <div>
-          <h3 className="text-xl font-semibold leading-snug text-textMain">
+        <div className="w-full hover:content-underline">
+          <h3 className="mb-2 text-xl font-semibold text-textMain">
             {work.title}
           </h3>
-          <p className="mt-2 text-md leading-snug text-textMain">
-            {work.project}
-          </p>
-          <p className="mt-2 text-md leading-snug text-textMain">{work.date}</p>
-          <p className="mt-2 text-md leading-snug text-textMain">
-            {work.excerpt}
-          </p>
-          <Image src={work.coverImage} alt="" width={500} height={300} />
+          <div className="mb-4">
+            <p className="text-sm leading-thin text-textMain">{work.project}</p>
+            <p className="text-sm leading-thin text-textMain">{work.date}</p>
+            <p
+              className="mb-2 text-sm leading-thin text-textMain"
+              dangerouslySetInnerHTML={{ __html: work.languge }}
+            ></p>
+            <p className="text-sm leading-thin text-textMain">{work.excerpt}</p>
+          </div>
+          <Image
+            src={work.Image.cover}
+            alt={work.slug}
+            width={700}
+            height={400}
+          />
         </div>
       </Link>
     </NeoWorkContent>

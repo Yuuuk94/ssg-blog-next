@@ -26,7 +26,7 @@ export const NeoContent = ({ children }: Props) => {
 
 export const NeoWorkContent = ({ children }: Props) => {
   return (
-    <div className="bg-bgGray rounded-2xl min-[770px]:w-[48%] px-8 min-[770px]:px-8 py-8 min-[770px]:py-8 mb-8 relative cursor-pointer">
+    <div className="bg-bgGray rounded-2xl min-[770px]:w-[49%] px-8 min-[770px]:px-8 py-8 min-[770px]:py-8 mb-8 relative cursor-pointer">
       {children}
       <div className="rounded-2xl shadow-custom-neo-b absolute inset-0 -z-40"></div>
       <div className="rounded-2xl shadow-custom-neo-t absolute inset-0 -z-40"></div>

@@ -40,6 +40,6 @@ export function getAllWorks(fields: string[] = []) {
   const slugs = getWorkSlugs();
   const posts = slugs
     .map((slug) => getWorkBySlug(slug, fields))
-    .sort((work1, work2) => (work1.date > work2.date ? -1 : 1));
+    .sort((work1, work2) => (work1.Number > work2.Number ? 1 : -1));
   return posts;
 }

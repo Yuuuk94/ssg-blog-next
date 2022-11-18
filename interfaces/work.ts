@@ -1,15 +1,16 @@
 type WorkType = {
   slug: string;
   title: string;
-  excerpt: string;
-  coverImage: string;
-  date: string;
   project: string;
+  date: string;
+  languge: string;
   URL: {
     demo: string;
     git: string;
   };
+  excerpt: string;
   Image: {
+    cover: string;
     url: string;
   };
   content: string;
