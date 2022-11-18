@@ -1,7 +1,6 @@
 import Layout from "../../components/common/layout";
 import WorksList from "../../components/works/works-list";
 import { getAllWorks } from "../../lib/work-api";
-import Post from "../../interfaces/post";
 import WorkType from "../../interfaces/work";
 import { Neotitle } from "../../components/common/styled-component";
 
@@ -22,13 +21,15 @@ export default Works;
 
 export const getStaticProps = async () => {
   const allWorks = getAllWorks([
+    "slug",
     "title",
     "date",
     "project",
-    "slug",
-    "coverImage",
+    "languge",
     "URL",
     "excerpt",
+    "Image",
+    "Number",
   ]);
 
   return {

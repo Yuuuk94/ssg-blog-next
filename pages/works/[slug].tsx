@@ -4,31 +4,26 @@ import Layout from "../../components/common/layout";
 import { getWorkBySlug, getAllWorks } from "../../lib/work-api";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
-import type PostType from "../../interfaces/post";
-import Image from "next/image";
 import WorkType from "../../interfaces/work";
+import WorkDetail from "../../components/works/work-detail";
 
 type Props = {
-  post: WorkType;
+  work: WorkType;
   morePosts: WorkType[];
   preview?: boolean;
 };
 
-export default function Work({ post, morePosts, preview }: Props) {
+export default function Work({ work, morePosts, preview }: Props) {
   const router = useRouter();
-  if (!router.isFallback && !post?.slug) {
+  if (!router.isFallback && !work?.slug) {
     return <ErrorPage statusCode={404} />;
   }
   return (
     <Layout>
       <Head>
-        <title>{post.title}</title>
-        <meta property="og:image" content={post.coverImage} />
+        <meta property="og:image" content={work.Image.cover} />
       </Head>
-      <p>{post.title}</p>
-      <p>{post.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
-      <Image src={post.coverImage} alt="" width="300" height="300" />
+      <WorkDetail work={work} />
     </Layout>
   );
 }
@@ -40,22 +35,22 @@ type Params = {
 };
 
 export async function getStaticProps({ params }: Params) {
-  const post = getWorkBySlug(params.slug, [
-    "title",
-    "date",
+  const work = getWorkBySlug(params.slug, [
     "slug",
-    "content",
+    "title",
     "project",
-    "coverImage",
+    "date",
+    "languge",
     "URL",
     "Image",
+    "content",
   ]);
-  const content = await markdownToHtml(post.content || "");
+  const content = await markdownToHtml(work.content || "");
 
   return {
     props: {
-      post: {
-        ...post,
+      work: {
+        ...work,
         content,
       },
     },
@@ -63,13 +58,13 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllWorks(["slug"]);
+  const works = getAllWorks(["slug"]);
 
   return {
-    paths: posts.map((post) => {
+    paths: works.map((work) => {
       return {
         params: {
-          slug: post.slug,
+          slug: work.slug,
         },
       };
     }),
