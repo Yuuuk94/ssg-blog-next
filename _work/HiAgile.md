@@ -4,7 +4,7 @@ project: "팀 프로젝트/ 프론트엔드 작업"
 date: "2022. 10 – 진행 중"
 languge: "Frontend : React, TypeScript, Tailwind, Apollo Client, GraphQL<br/>Backend : Nest, PostgreSQL"
 URL:
-  demo: "https://hiagail-client.vercel.app"
+  demo: "[https://hiagil-client.vercel.app](https://hiagile-client.vercel.app)"
   git: "https://github.com/HIAGILE/client"
 excerpt: "애자일 방법론을 기반으로 프로젝트 관리를 할 수 있는 프로젝트 메니지먼트 웹 서비스"
 Image:
