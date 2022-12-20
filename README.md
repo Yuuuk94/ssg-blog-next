@@ -26,4 +26,4 @@ Next.js, TypeScript, Tailwind CSS
 ## 프로젝트를 통해 배운 것
 -	Next.js를 통해 SSR뿐만 아니라 SSG, ISR에 대해 경험했습니다. SSG가 활용될 수 있는 블로그, 홍보 사이트 등의 활용 사례를 고민하다 새로운 포트폴리오와 블로깅 사이트를 제작할 수 있었습니다.
 -	간헐적으로 업데이트되는 외부 블로그의 RSS 피드를 반영하기에는 SSG의 한계를 느꼈습니다. 대신 revalidate 옵션으로 24시간마다 페이지가 다시 빌드가 되도록 설정하므로써 ISR을 구현하였습니다.
-![image](https://user-images.githubusercontent.com/95343748/208450651-c334dbb4-da66-43aa-ab56-e04507ed9c41.png)
+
