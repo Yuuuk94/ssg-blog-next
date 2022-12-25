@@ -79,7 +79,8 @@ const About: NextPage = () => {
               <p className="mb-2 text-sm">2022.07</p>
 
               <p className="mb-4 text-sm leading-relaxed">
-                입사 후 처음 참여한 고객센터로부터 콜백 요청하는 웹 기반 서비스
+                입사 후 처음 참여한 프로젝트로 고객으로부터 고객센터 콜백 요청을
+                받는 웹뷰 기반 서비스
                 <br />
                 고객센터의 연결 상태 화면 뷰와 공지사항 및 검색 화면 뷰 구현
                 <br />
@@ -144,8 +145,6 @@ const About: NextPage = () => {
             CSR, SSR, SSG 구현이 가능합니다.
             <br />
             Redux, Vuex, Apollo Client를 통한 상태 관리가 가능합니다.
-            <br />
-            라이프 사이클에 따른 개발이 가능합니다.
           </p>
           <p className="mb-2 text-lg font-bold text-textMain">
             Javascript / TypeScript / jQuery
