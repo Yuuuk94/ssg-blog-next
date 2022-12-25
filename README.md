@@ -1,8 +1,6 @@
 ### SSG 정적 블로그 & 포트폴리오
 
-## 개인 프로젝트
-
-2022. 10
+개인 프로젝트 2022. 10
 
 Next.js, TypeScript, Tailwind CSS
 
