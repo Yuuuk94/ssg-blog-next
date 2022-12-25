@@ -2,8 +2,6 @@
 
 개인 프로젝트 2022. 10
 
-Next.js, TypeScript, Tailwind CSS
-
 ## 데모보기	:https://ssg-portfolio.vercel.app
 
 ## 소개
