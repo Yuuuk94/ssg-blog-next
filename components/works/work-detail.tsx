@@ -8,7 +8,6 @@ type Props = {
 };
 
 const WorkDetail = ({ work }: Props) => {
-  console.log(work.Image.cover);
   return (
     <>
       <NeoContent>
