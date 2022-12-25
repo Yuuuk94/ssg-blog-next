@@ -56,8 +56,8 @@ const About: NextPage = () => {
                 서비스 Vuetify가 적용된 UI/UX를 디자인에 맞게 커스텀하여
                 회원가입 및 다수 서비스 화면 보수
                 <br />
-                Js와 iframe으로 제공되는 외부 서비스를 Vue에 맞게 적용하여 자사
-                플랫폼에 연동
+                Js와 Iframe으로 제공되는 외부 서비스를 Vue 라이프 사이클에 맞게
+                적용하여 자사 플랫폼에 연동
                 <br />
                 git flow를 도입한 개발 전략에 따라 git과 sourcetree를 활용하여
                 팀원들과 협업
