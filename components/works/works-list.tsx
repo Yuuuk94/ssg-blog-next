@@ -26,7 +26,7 @@ type WorkProps = {
 const Work = ({ work }: WorkProps) => {
   return (
     <NeoWorkContent>
-      <Link as={`/works/${work.slug}`} href="/works/[slug]">
+      <Link as={`/portfolio/${work.slug}`} href="/portfolio/[slug]">
         <div className="w-full hover:content-underline">
           <h3 className="mb-2 text-xl font-semibold text-textMain">
             {work.title}
@@ -45,6 +45,7 @@ const Work = ({ work }: WorkProps) => {
             alt={work.slug}
             width={700}
             height={400}
+            priority
           />
         </div>
       </Link>
