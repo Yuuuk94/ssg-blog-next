@@ -35,7 +35,13 @@ const WorkDetail = ({ work }: Props) => {
       </NeoContent>
       <NeoContent>
         <h2 className="mb-4 text-lg font-bold  text-textSub">View Page</h2>
-        <Image src={work.Image.cover} alt="cover" width="1200" height="800" />
+        <Image
+          src={work.Image.cover}
+          alt="cover"
+          width="1200"
+          height="800"
+          priority
+        />
       </NeoContent>
       <NeoContent>
         <div

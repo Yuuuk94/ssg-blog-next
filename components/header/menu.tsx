@@ -5,7 +5,7 @@ const Menu = () => {
   return (
     <nav className="flex items-center">
       <MenuItem name="about" />
-      <MenuItem name="works" />
+      <MenuItem name="portfolio" />
       <MenuItem name="posts" />
     </nav>
   );
