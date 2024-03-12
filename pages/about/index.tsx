@@ -73,7 +73,6 @@ const About: NextPage = () => {
               components, emotion), Git, github, ESLint, Prettier, Figma,
               Jenkins, Azure VM
             </p>
-            <br />
           </div>
         </div>
       </NeoContent>
